@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Resources\User\UserResource;
-use App\Models\User;
+use App\Http\Resources\Gift\GiftCollection;
+use App\Http\Resources\Gift\GiftResource;
+use App\Models\Gift;
 use Illuminate\Http\Request;
 
-class UserController extends Controller
+class GiftController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +16,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        //
+        return new GiftCollection(Gift::all());
     }
 
     /**
@@ -42,21 +43,21 @@ class UserController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\User  $user
+     * @param  \App\Models\Gift  $gift
      * @return \Illuminate\Http\Response
      */
-    public function show(User $user)
+    public function show(Gift $gift)
     {
-        return new UserResource($user);
+        return new GiftResource($gift);
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\User  $user
+     * @param  \App\Models\Gift  $gift
      * @return \Illuminate\Http\Response
      */
-    public function edit(User $user)
+    public function edit(Gift $gift)
     {
         //
     }
@@ -65,10 +66,10 @@ class UserController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\User  $user
+     * @param  \App\Models\Gift  $gift
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, User $user)
+    public function update(Request $request, Gift $gift)
     {
         //
     }
@@ -76,10 +77,10 @@ class UserController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\User  $user
+     * @param  \App\Models\Gift  $gift
      * @return \Illuminate\Http\Response
      */
-    public function destroy(User $user)
+    public function destroy(Gift $gift)
     {
         //
     }
