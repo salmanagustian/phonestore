@@ -15,13 +15,18 @@ class CreateGiftsTable extends Migration
     {
         Schema::create('gifts', function (Blueprint $table) {
             $table->id();
-            $table->string('series', 256)->nullable();
             $table->mediumText('slug')->nullable();
+            $table->string('series', 256)->nullable();
+            $table->mediumText('screen')->nullable();
+            $table->mediumText('memory')->nullable();
+            $table->mediumText('operation_system')->nullable();
+            $table->mediumText('cpu')->nullable();
+            $table->mediumText('camera')->nullable();
+            $table->mediumText('sim')->nullable();
+            $table->mediumText('battery')->nullable();
             $table->integer('points')->unsigned()->nullable();
             $table->integer('stock')->unsigned()->nullable();
             $table->integer('total_reviews')->unsigned()->nullable();
-            $table->longText('descr_on_detail')->nullable()->comment('Keterangan untuk item detail');
-            $table->longText('descr_on_info')->nullable()->comment('Keterangan untuk item info');
             $table->integer('created_by')->unsigned()->nullable();
             $table->integer('updated_by')->unsigned()->nullable();
             $table->timestamps();

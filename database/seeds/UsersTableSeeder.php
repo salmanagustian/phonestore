@@ -3,6 +3,7 @@
 use App\Models\User;
 use Illuminate\Support\Str;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 
 class UsersTableSeeder extends Seeder
@@ -36,6 +37,6 @@ class UsersTableSeeder extends Seeder
             ]);
         }
 
-        User::insert($users);
+        DB::table('users')->insert($users);
     }
 }

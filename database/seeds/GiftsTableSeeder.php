@@ -1,8 +1,9 @@
 <?php
 
 use App\Models\Gift;
-use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class GiftsTableSeeder extends Seeder
 {
@@ -51,6 +52,6 @@ class GiftsTableSeeder extends Seeder
             ],
         ];
 
-        Gift::insert($gifts);
+        DB::table('gifts')->insert($gifts);
     }
 }

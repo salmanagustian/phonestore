@@ -2,13 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Resources\Gift\GiftCollection;
-use App\Http\Resources\Gift\GiftResource;
 use App\Models\Gift;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use App\Http\Requests\GiftRequest;
+use App\Http\Resources\Gift\GiftResource;
+use App\Http\Resources\Gift\GiftCollection;
+use App\Traits\ResponseUtils;
 
 class GiftController extends Controller
 {
+    use ResponseUtils;
+
     /**
      * Display a listing of the resource.
      *
@@ -35,9 +40,13 @@ class GiftController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(GiftRequest $request)
     {
-        //
+        $validRequest = $request->validated();
+
+        Gift::create(array_merge($validRequest, ['slug' => Str::slug($validRequest['series'])] ));
+
+        return $this->sendResponseSuccess(__('response.success'));
     }
 
     /**
@@ -59,7 +68,7 @@ class GiftController extends Controller
      */
     public function edit(Gift $gift)
     {
-        //
+        return new GiftResource($gift);
     }
 
     /**
@@ -69,9 +78,13 @@ class GiftController extends Controller
      * @param  \App\Models\Gift  $gift
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Gift $gift)
+    public function update(GiftRequest $request, Gift $gift)
     {
-        //
+        $validRequest = $request->validated();
+
+        $gift->update($validRequest);
+
+        return $this->sendResponseSuccess(__('response.success-update'));
     }
 
     /**
@@ -82,6 +95,8 @@ class GiftController extends Controller
      */
     public function destroy(Gift $gift)
     {
-        //
+        $gift->delete();
+
+        return $this->sendResponseSuccess(__('response.success-delete'));
     }
 }
