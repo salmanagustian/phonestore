@@ -14,6 +14,22 @@ class GiftResource extends JsonResource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        return [
+            'type' => 'gifts',
+            'id' => $this->id,
+            'attributes' => [
+                'series'           => $this->series,
+                'screen'           => $this->screen,
+                'memory'           => $this->memory,
+                'operation_system' => $this->operation_system,
+                'cpu'              => $this->cpu,
+                'camera'           => $this->camera,
+                'sim'              => $this->sim,
+                'battery'          => $this->battery,
+                'points'           => $this->points,
+                'stock'            => $this->stock,
+                'total_reviews'    => $this->total_reviews,
+            ]
+        ];
     }
 }

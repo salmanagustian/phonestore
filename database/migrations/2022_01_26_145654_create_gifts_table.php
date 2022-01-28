@@ -26,6 +26,7 @@ class CreateGiftsTable extends Migration
             $table->mediumText('battery')->nullable();
             $table->integer('points')->unsigned()->nullable();
             $table->integer('stock')->unsigned()->nullable();
+            $table->double('rating')->nullable();
             $table->integer('total_reviews')->unsigned()->nullable();
             $table->integer('created_by')->unsigned()->nullable();
             $table->integer('updated_by')->unsigned()->nullable();

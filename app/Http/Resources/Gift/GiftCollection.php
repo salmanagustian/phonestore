@@ -14,8 +14,6 @@ class GiftCollection extends ResourceCollection
      */
     public function toArray($request)
     {
-        return [
-            'data' => $this->collection
-        ];
+        return GiftResource::collection($this->collection);
     }
 }
