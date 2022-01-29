@@ -11,12 +11,20 @@
     <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
         <ListProducts v-for="(gift, index) in gifts" :gift="gift" :key="index"/>
     </div>
+
+    <div class="flex">
+        <div class="ml-auto">
+        
+        </div>
+    </div>
 </div>
 </template>
 
 <script>
 
 import ListProducts from './ListProducts.vue';
+import Pagination from 'laravel-vue-pagination';
+
 
 export default {
     name: 'Product',
@@ -24,10 +32,12 @@ export default {
     data() {
         return {
             gifts: [],
+            giftsData: {}
         }
     },
     components: {
         ListProducts,
+        Pagination,
     },
 
     created() {
@@ -38,5 +48,21 @@ export default {
                 this.gifts.push(...giftsData);
             }).catch((err) => console.log(err));
     },
+
+    methods: {
+        getResults(page) {
+            if (typeof page === 'undefined') {
+                page = 1;
+            }
+
+            axios.get('/api/v1/gifts?page=' + page)
+                .then(response => {
+                    return response.json();
+                })
+                .then(data => {
+                    this.giftsData = data;
+                });
+        }
+    }
 }
 </script>

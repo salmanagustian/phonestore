@@ -27,7 +27,7 @@ class CreateGiftsTable extends Migration
             $table->integer('points')->unsigned()->nullable();
             $table->integer('stock')->unsigned()->nullable();
             $table->double('rating')->nullable();
-            $table->tinyInteger('flag')->nullable()->comment('1: New 2:Best Seller 3: Hot Item 4:None');
+            $table->tinyInteger('flag')->nullable()->comment('1: New 2:Best Seller 3: Hot Item 4:None')->default(4);
             $table->integer('total_reviews')->unsigned()->nullable();
             $table->integer('created_by')->unsigned()->nullable();
             $table->integer('updated_by')->unsigned()->nullable();

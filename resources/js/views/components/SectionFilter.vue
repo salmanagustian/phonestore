@@ -22,7 +22,7 @@
         </div>
         <div class="flex items-center justify-start">
             <div class="mr-auto text-[#888888]">
-                Stock Tersedia
+                Stock Tersedia {{  checkedFilterStock }}
             </div>
             <div>
                 <div class="form-check">
@@ -50,6 +50,8 @@ export default {
             checkedFilterRating: '',
             checkedFilterStock: '',
         }
-    }
+    },
+
+   
 }
 </script>
