@@ -31,6 +31,7 @@ Selanjutnya, untuk melakukan generate table jangan lupa setting .env (nama datab
 
 ```bash
 php artisan migrate:refresh --seed
+php artisan serve
 ```
 
 Selanjutnya
