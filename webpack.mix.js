@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+const WebpackConfig = require('laravel-mix/src/builder/WebpackConfig');
 
 /*
  |--------------------------------------------------------------------------
@@ -16,3 +17,5 @@ mix.js('resources/js/app.js', 'public/js')
         require('tailwindcss')
     ])
     .vue();
+
+

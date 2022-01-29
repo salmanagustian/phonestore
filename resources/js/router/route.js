@@ -7,13 +7,13 @@ const routes = [
         component: require('../views/Home').default
     },
     {
-        path: '/about',
-        component: require('../views/About').default
+        path: '/gift/:id',
+        component: require('../views/DetailGift').default
     },
 ];
 
 export default new VueRouter({
-    // mode: 'history',
+    mode: 'history',
     routes,
     linkActiveClass: 'is-active',
     linkExactActiveClass: '',

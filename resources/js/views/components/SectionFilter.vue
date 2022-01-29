@@ -14,7 +14,8 @@
                         bg-contain border border-gray-300 rounded-sm appearance-none cursor-pointer 
                         form-check-input checked:bg-[#74B71B] checked:border-[#74B71B] focus:outline-none" 
                         type="checkbox" 
-                        value="" 
+                        value="1"
+                        v-model="checkedFilterRating" 
                         id="flexCheckDefault3">
                 </div>
             </div>
@@ -30,7 +31,8 @@
                         bg-contain border border-gray-300 rounded-sm appearance-none cursor-pointer 
                         form-check-input checked:bg-[#74B71B] checked:border-[#74B71B] focus:outline-none" 
                         type="checkbox" 
-                        value="" 
+                        value="2"
+                        v-model="checkedFilterStock" 
                         id="flexCheckDefault3">
                 </div>
             </div>
@@ -41,6 +43,13 @@
 
 <script>
 export default {
-    name: 'FilterGift'
+    name: 'FilterGift',
+
+    data() {
+        return {
+            checkedFilterRating: '',
+            checkedFilterStock: '',
+        }
+    }
 }
 </script>

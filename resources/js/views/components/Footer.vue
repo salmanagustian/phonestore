@@ -1,15 +1,15 @@
 <template>
-  <div class="flex items-center justify-between py-7 px-52 bg-[#3C3C3F] text-white fixed bottom-0 w-full">
+  <div class="flex items-center justify-between py-7 px-52 bg-[#3C3C3F] text-white mb-auto w-full">
       <div class="flex-grow">
           <div class="flex items-center gap-8">
             <div>
-                <img src="images/ig.png" alt="Instagram">
+                <img src="/images/ig.png" alt="Instagram">
             </div>
             <div>
-                <img src="images/fb.png" alt="Facebook">
+                <img src="/images/fb.png" alt="Facebook">
             </div>
             <div>
-                <img src="images/twt.png" alt="Rwitter">
+                <img src="/images/twt.png" alt="Rwitter">
             </div>
           </div>
       </div>

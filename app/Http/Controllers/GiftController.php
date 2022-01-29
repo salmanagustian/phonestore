@@ -22,7 +22,7 @@ class GiftController extends Controller
      */
     public function index()
     {
-        return new GiftCollection(Gift::paginate(2));
+        return new GiftCollection(Gift::paginate(6));
     }
 
     /**

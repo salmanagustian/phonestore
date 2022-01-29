@@ -1,21 +1,24 @@
 <template>
-    <div>
-        <Navbar/>
-        <div class="container">
-
-            <div class="flex flex-row gap-20 mt-8">
-                <div class="basis-1/4">
-                    <SectionFilter/>
-                </div>
-                <div class="basis-full">
-                    <SectionProduct/>
-                </div>
-            </div>    
-        
+    <div class="flex flex-col h-screen">
+        <div>
+            <Navbar/>
+        </div>
+        <div class="flex-grow mt-8">
+            <div class="container">
+                <div class="flex flex-row gap-20">
+                    <div class="basis-1/4">
+                        <SectionFilter/>
+                    </div>
+                    <div class="basis-full">
+                        <SectionProduct/>
+                    </div>
+                </div>    
+            </div>
         </div>
 
-
-        <Footer/>
+        <div class="mt-8">
+            <Footer/>
+        </div>
     </div>
 </template>			
 

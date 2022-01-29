@@ -15,13 +15,18 @@
         color : #79B625;
         opacity: 0.8;
     }
+
+    .text-danger {
+        color : #79B625;
+        opacity: 0.8;
+    }
 }
 
 @layer components {
     .card {
         @apply relative flex flex-col min-w-0 break-words
          bg-white bg-clip-border border-[2px] border-[#D8D8D8] border-solid border-opacity-40 rounded-[0.5rem]
-           px-10 py-8 select-none
+         px-10 py-8 h-full
     }
 
     .btn {
@@ -35,7 +40,15 @@
         @apply bg-pink-600
     }
 
+    .btn-redeem {
+        @apply bg-emerald-700
+    }
+
     .btn-outline {
         @apply border-[1px] border-solid border-gray-200
+    }
+
+    .btn-outline-add-chart {
+        @apply border-[1px] border-solid border-[#81BE30] text-[#81BE30] text-sm font-light
     }
 }

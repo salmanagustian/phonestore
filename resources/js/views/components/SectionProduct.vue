@@ -9,9 +9,7 @@
     </div>
     <div class="border border-slate-200"></div>
     <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
-        <ListProducts/>
-        <ListProducts/>
-        <ListProducts/>
+        <ListProducts v-for="(gift, index) in gifts" :gift="gift" :key="index"/>
     </div>
 </div>
 </template>
@@ -23,8 +21,22 @@ import ListProducts from './ListProducts.vue';
 export default {
     name: 'Product',
 
+    data() {
+        return {
+            gifts: [],
+        }
+    },
     components: {
         ListProducts,
-    }
+    },
+
+    created() {
+        axios.get('/api/v1/gifts')
+            .then(({data}) => {
+                const giftsData = data.data;
+
+                this.gifts.push(...giftsData);
+            }).catch((err) => console.log(err));
+    },
 }
 </script>

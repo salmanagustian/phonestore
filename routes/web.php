@@ -7,6 +7,6 @@ Route::get('/', function () {
 });
 
 
-Route::any('{slug}', function () {
+Route::get('{any}', function () { 
     return view('welcome');
-});
+})->where('any', '.*'); 

@@ -28,6 +28,7 @@ class GiftsTableSeeder extends Seeder
                'points'           => 200000,
                'stock'            => 15,
                'total_reviews'    => 0,
+               'flag' => 4,
             ],
             [
                'series'        => 'Samsung Galaxy M52 5G',
@@ -42,6 +43,7 @@ class GiftsTableSeeder extends Seeder
                'points'        => 350000,
                'stock'         => 22,
                'total_reviews' => 0,
+               'flag' => 4,
             ],
             [
                'series' => 'Xiaomi Redmi Note 10',
@@ -56,6 +58,7 @@ class GiftsTableSeeder extends Seeder
                'points' => 225000,
                'stock' => 10,
                'total_reviews' => 0,
+               'flag' => 1,
             ],
             [
                'series' => 'Samsung Galaxy A52 5G',
@@ -70,6 +73,7 @@ class GiftsTableSeeder extends Seeder
                'points' => 150000,
                'stock' => 7,
                'total_reviews' => 0,
+               'flag' => 2,
             ],
             [
                'series' => 'Samsung Galaxy A52s 5G',
@@ -84,6 +88,7 @@ class GiftsTableSeeder extends Seeder
                'points' => 450000,
                'stock' => 4,
                'total_reviews' => 0,
+               'flag' => 3
             ],
         ];
 

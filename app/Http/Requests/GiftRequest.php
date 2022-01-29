@@ -36,6 +36,7 @@ class GiftRequest extends FormRequest
             'battery'          => $require,
             'points'           => $require.'|integer',
             'stock'            => $require.'|integer',
+            'total_reviews'    => $require.'|integer',
         ];
     }
 }

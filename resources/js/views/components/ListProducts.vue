@@ -1,27 +1,28 @@
 <template>
-	<div class="card">
-		<div class="absolute top-[-6px] right-[-7px]">
-			<img src="images/badge-hotitem.png" alt="Badge Hot Item">
+	<div class="mb-10 card">
+		<div class="absolute top-[-6px] right-[-7px] " :class="gift.attributes.flag == 4 ? 'hidden' : 'block'">
+			<img :src="giftFormatImage(gift.attributes.flag)" alt="Badge Hot Item">
 		</div>
-		<div class="flex flex-col justify-start space-y-2">
-			<div class="text-sm text-success">In Stock</div>
+		<div class="flex flex-col justify-start flex-grow space-y-2">
+			
+			<div class="text-sm font-semibold" :class="stockFormatClass(gift.attributes.stock)">{{ gift.attributes.stock | stockFormatLabel }}</div>
 			<div class="mx-auto">
-				<img src="images/phone-2x.png" class="object-contain w-full" alt="Phone">
+				<img src="/images/phone-2x.png" class="object-contain w-full select-none " alt="Phone">
 			</div>
-			<div class="text-[#3C3C3F] text-lg font-medium text-left">
-				Samsung Galaxy S9-Midnight Black 4/64 GB
+			<div class="text-[#3C3C3F] text-lg font-medium text-left cursor-pointer">
+				<router-link :to="`gift/${gift.id}`">{{ gift.attributes.series }}</router-link>
 			</div>
-			<div class="flex items-end justify-between gap-3">
+			<div class="flex items-end justify-between flex-grow gap-3">
 				<div>
 					<div class="flex gap-2">
-						<img src="images/badge-points.svg" alt="">
-						<p class="text-sm text-success">20000 points</p>
+						<img src="/images/badge-points.svg" alt="">
+						<p class="text-sm text-success">{{ gift.attributes.points }} points</p>
 					</div>
 					<div class="flex items-center gap-2 mt-1">
 						<span>
-							<img src="images/rating.svg" class="object-contain w-full" alt="Rating">
+							<img src="/images/rating.svg" class="object-contain w-full" alt="Rating">
 						</span>
-						<span class="text-[#838EAB] text-sm font-light">160 reviews</span>
+						<span class="text-[#838EAB] text-sm font-light">{{ gift.attributes.total_reviews }} reviews</span>
 					</div>
 				</div>
 				<div>
@@ -41,6 +42,37 @@
 
 <script>
     export default {
-        name: 'ListProducts'
+        name: 'ListProducts',
+
+		props: ['gift'],
+
+		filters: {
+			stockFormatLabel(stock) {
+				if(stock == 0)
+					return 'Sold Out'
+				else if(stock < 5)
+					return 'Stock < 5'
+				else
+					return 'In Stock'
+			}
+		},
+
+		methods: {
+			stockFormatClass(stock) {
+				if(stock == 0 || stock < 5)
+					return 'text-pink-600'
+				else
+					return 'text-success'
+			},
+
+			giftFormatImage(flag) {
+				if(flag == 1)
+					return '/images/badge-newitem.png';
+				else if(flag == 2)
+					return '/images/badge-bestseller.png';
+				else if(flag == 3)
+					return '/images/badge-hotitem.png';
+			}
+		},
     }
 </script>
