@@ -1,5 +1,3 @@
-# COMING SOOON GUYS! :) #
-
 ## Tech spec documentation ###
 <ol>
   <li>Framework menggunakan **Laravel Versi 7**</li>
