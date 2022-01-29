@@ -1,0 +1,928 @@
+{
+	"id": "7d35bd64-4c7c-5a33-c92d-19725210d815",
+	"name": "Phonestore-docs",
+	"description": "Postman Collection aplikasi Phonestore, untuk Web Dev Test Rolling Glory.",
+	"order": [],
+	"folders": [
+		{
+			"name": "Auth",
+			"description": "Authentikasi",
+			"collectionId": "7d35bd64-4c7c-5a33-c92d-19725210d815",
+			"order": [
+				"f941c51e-9c60-4eba-58bc-fe687e268f65"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "7e9e7a8a-debe-510a-7ce6-d7945224f24e"
+		},
+		{
+			"name": "Gifts",
+			"description": "",
+			"collectionId": "7d35bd64-4c7c-5a33-c92d-19725210d815",
+			"order": [
+				"05418eeb-33c1-c0c7-2ed2-257b38503bdc",
+				"19ab4052-c726-1672-eb9b-5fa9db6722fd",
+				"726accc7-88ea-3a8b-ef8a-26d303a4a1df",
+				"1d0bf102-6721-2032-1d21-2021e89293c0",
+				"c159c451-4048-111c-1af7-caaa7f469e4f",
+				"261c4475-5ca4-cf5f-f049-7f909d8d6b7a",
+				"7fc064cd-4509-8f46-4b97-ffa33952a46c",
+				"64a39fd4-8a6e-bfbb-9de2-f1fd6bfcc958"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "988cb3f9-6b6d-113b-0c9b-62465f65efc5"
+		},
+		{
+			"name": "Users",
+			"description": "",
+			"collectionId": "7d35bd64-4c7c-5a33-c92d-19725210d815",
+			"order": [
+				"65019d2d-ce53-f51a-cca2-c5d6e37a66c4",
+				"2cacfde0-5488-8830-0c60-564f4010d4f0",
+				"cdeb662c-3e2a-80bd-a6b2-524d98a81372",
+				"8036b8f4-585d-4c34-a6e1-8b4f0337bcb8",
+				"1676d1e7-25a4-8451-acb8-60384ced6821",
+				"c671ac3a-672a-639a-7a64-f090965417c4"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "c2a21e16-9234-d202-d775-d7b5c3250cd8"
+		}
+	],
+	"folders_order": [
+		"7e9e7a8a-debe-510a-7ce6-d7945224f24e",
+		"c2a21e16-9234-d202-d775-d7b5c3250cd8",
+		"988cb3f9-6b6d-113b-0c9b-62465f65efc5"
+	],
+	"timestamp": 1643417703979,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "05418eeb-33c1-c0c7-2ed2-257b38503bdc",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n//Authorization: Bearer 21|RXUd9LrxvNsQZCbugBcNl9aHlW1PW2F4kllQGZty\nAccept: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer 21|RXUd9LrxvNsQZCbugBcNl9aHlW1PW2F4kllQGZty",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/phonestore-api/public/api/v1/gifts",
+			"folder": "988cb3f9-6b6d-113b-0c9b-62465f65efc5",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "screen",
+					"value": "Ukuran layar: 6.2 inci, Dual Edge Super AMOLED 2960 x 1440 (Quad HD+) 529 ppi, 18.5:9",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "series",
+					"value": "xiaomi redmi note 10",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "memory",
+					"value": "RAM 6 GB (LPDDR4), ROM 64 GB, MicroSD up to 400GB",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "operation_system",
+					"value": "Android 8.0 (Oreo)",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cpu",
+					"value": "Exynos 9810 Octa-core (2.7GHz Quad + 1.7GHz Quad), 64 bit, 10nm processor",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "camera",
+					"value": "Super Speed Dual Pixel, 12 MP OIS (F1.5/F2.4 Dual Aperture) + 12MP OIS (F2.4) with LED flash, depan 8 MP, f/1.7, autofocus, 1440p@30fps, dual video call, Auto HDR",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "sim",
+					"value": "Dual SIM (Nano-SIM)",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "battery",
+					"value": "Non-removable Li-Ion 3500 mAh , Fast Charging on wired and wireless",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "points",
+					"value": "15000",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "stock",
+					"value": "40",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1643471832829,
+			"name": "create",
+			"description": "Menambah Gift baru.\n\nNote: hanya bisa di lakukan dengan user yang sudah ter authentikasi",
+			"collectionId": "7d35bd64-4c7c-5a33-c92d-19725210d815",
+			"responses": []
+		},
+		{
+			"id": "1676d1e7-25a4-8451-acb8-60384ced6821",
+			"headers": "Accept: application/json\nAuthorization: Bearer 21|RXUd9LrxvNsQZCbugBcNl9aHlW1PW2F4kllQGZty\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer 21|RXUd9LrxvNsQZCbugBcNl9aHlW1PW2F4kllQGZty",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/phonestore-api/public/api/v1/users/3",
+			"folder": "c2a21e16-9234-d202-d775-d7b5c3250cd8",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [
+				{
+					"key": "fullname",
+					"value": "Yogi Sumitra",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "username",
+					"value": "yogisumitra",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1643419205836,
+			"name": "delete",
+			"description": "Melakukan delete User yang dipilih.\n\nNote: hanya bisa di lakukan dengan user yang sudah ter authentikasi",
+			"collectionId": "7d35bd64-4c7c-5a33-c92d-19725210d815",
+			"responses": []
+		},
+		{
+			"id": "19ab4052-c726-1672-eb9b-5fa9db6722fd",
+			"headers": "Accept: application/json\nAuthorization: Bearer 22|qIlvz7Rv9VKfCemtfA6FqrlDCAsaFovX7xAlh8eW\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer 22|qIlvz7Rv9VKfCemtfA6FqrlDCAsaFovX7xAlh8eW",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/phonestore-api/public/api/v1/gifts?page=1",
+			"folder": "c2a21e16-9234-d202-d775-d7b5c3250cd8",
+			"queryParams": [
+				{
+					"key": "page",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1643471831677,
+			"name": "read",
+			"description": "Menampilkan list Gifts.\n\nNote: hanya bisa di lakukan dengan user yang sudah ter authentikasi",
+			"collectionId": "7d35bd64-4c7c-5a33-c92d-19725210d815",
+			"responses": []
+		},
+		{
+			"id": "1d0bf102-6721-2032-1d21-2021e89293c0",
+			"headers": "Accept: application/json\nAuthorization: Bearer 21|RXUd9LrxvNsQZCbugBcNl9aHlW1PW2F4kllQGZty\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer 21|RXUd9LrxvNsQZCbugBcNl9aHlW1PW2F4kllQGZty",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/phonestore-api/public/api/v1/gifts/2",
+			"folder": "988cb3f9-6b6d-113b-0c9b-62465f65efc5",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PATCH",
+			"data": [
+				{
+					"key": "battery",
+					"value": "Non-removable Li-Ion 6000 mAh , Fast Charging on wired and wireless",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "series",
+					"value": "Samsung Galaxy S9-Midnight Black 4/64 GB",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "total_reviews",
+					"value": "50",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "stock",
+					"value": "10",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1643471829847,
+			"name": "patch",
+			"description": "Melakukan update attribute data Gift yang di pilih.\n\nNote: hanya bisa di lakukan dengan user yang sudah ter authentikasi",
+			"collectionId": "7d35bd64-4c7c-5a33-c92d-19725210d815",
+			"responses": []
+		},
+		{
+			"id": "261c4475-5ca4-cf5f-f049-7f909d8d6b7a",
+			"headers": "Accept: application/json\nAuthorization: Bearer 21|RXUd9LrxvNsQZCbugBcNl9aHlW1PW2F4kllQGZty\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer 21|RXUd9LrxvNsQZCbugBcNl9aHlW1PW2F4kllQGZty",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/phonestore-api/public/api/v1/gifts/4",
+			"folder": "c2a21e16-9234-d202-d775-d7b5c3250cd8",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "fullname",
+					"value": "Yogi Sumitra",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "username",
+					"value": "yogisumitra",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1643420431297,
+			"name": "show",
+			"description": "Melakukan detail data Gift yang dipilih.\n\nNote: hanya bisa di lakukan dengan user yang sudah ter authentikasi",
+			"collectionId": "7d35bd64-4c7c-5a33-c92d-19725210d815",
+			"responses": []
+		},
+		{
+			"id": "2cacfde0-5488-8830-0c60-564f4010d4f0",
+			"headers": "Accept: application/json\nAuthorization: Bearer 21|RXUd9LrxvNsQZCbugBcNl9aHlW1PW2F4kllQGZty\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer 21|RXUd9LrxvNsQZCbugBcNl9aHlW1PW2F4kllQGZty",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/phonestore-api/public/api/v1/users",
+			"folder": "c2a21e16-9234-d202-d775-d7b5c3250cd8",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1643418738451,
+			"name": "read",
+			"description": "Menampilkan list User.\n\nNote: hanya bisa di lakukan dengan user yang sudah ter authentikasi",
+			"collectionId": "7d35bd64-4c7c-5a33-c92d-19725210d815",
+			"responses": []
+		},
+		{
+			"id": "64a39fd4-8a6e-bfbb-9de2-f1fd6bfcc958",
+			"headers": "Accept: application/json\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/phonestore-api/public/api/v1/gifts/2/rating",
+			"folder": "988cb3f9-6b6d-113b-0c9b-62465f65efc5",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "rating",
+					"value": "5",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1643471833558,
+			"name": "rating",
+			"description": "Melakukan rating terhadap item yang dipilih",
+			"collectionId": "7d35bd64-4c7c-5a33-c92d-19725210d815",
+			"responses": []
+		},
+		{
+			"id": "65019d2d-ce53-f51a-cca2-c5d6e37a66c4",
+			"headers": "Content-Type: application/x-www-form-urlencoded\nAuthorization: Bearer 21|RXUd9LrxvNsQZCbugBcNl9aHlW1PW2F4kllQGZty\nAccept: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer 21|RXUd9LrxvNsQZCbugBcNl9aHlW1PW2F4kllQGZty",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/phonestore-api/public/api/v1/users",
+			"folder": "c2a21e16-9234-d202-d775-d7b5c3250cd8",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "username",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "fullname",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "roles",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "points",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1643418661652,
+			"name": "create",
+			"description": "Menambah User baru.\n\nNote: hanya bisa di lakukan dengan user yang sudah ter authentikasi",
+			"collectionId": "7d35bd64-4c7c-5a33-c92d-19725210d815",
+			"responses": []
+		},
+		{
+			"id": "726accc7-88ea-3a8b-ef8a-26d303a4a1df",
+			"headers": "Content-Type: application/x-www-form-urlencoded\nAuthorization: Bearer 21|RXUd9LrxvNsQZCbugBcNl9aHlW1PW2F4kllQGZty\nAccept: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer 21|RXUd9LrxvNsQZCbugBcNl9aHlW1PW2F4kllQGZty",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/phonestore-api/public/api/v1/gifts/1",
+			"folder": "988cb3f9-6b6d-113b-0c9b-62465f65efc5",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [
+				{
+					"key": "series",
+					"value": "xiaomi redmi note 10",
+					"description": ""
+				},
+				{
+					"key": "screen",
+					"value": "Ukuran layar: 6.2 inci, Dual Edge Super AMOLED 2960 x 1440 (Quad HD+) 529 ppi, 18.5:9",
+					"description": ""
+				},
+				{
+					"key": "memory",
+					"value": "RAM 6 GB (LPDDR4), ROM 64 GB, MicroSD up to 400GB",
+					"description": ""
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1643420140302,
+			"name": "update",
+			"description": "Melakukan update data Gift yang dipilih.\n\nNote: hanya bisa di lakukan dengan user yang sudah ter authentikasi",
+			"collectionId": "7d35bd64-4c7c-5a33-c92d-19725210d815",
+			"responses": []
+		},
+		{
+			"id": "7fc064cd-4509-8f46-4b97-ffa33952a46c",
+			"headers": "Accept: application/json\nAuthorization: Bearer 21|RXUd9LrxvNsQZCbugBcNl9aHlW1PW2F4kllQGZty\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer 21|RXUd9LrxvNsQZCbugBcNl9aHlW1PW2F4kllQGZty",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/phonestore-api/public/api/v1/gifts/1/redeem",
+			"folder": "988cb3f9-6b6d-113b-0c9b-62465f65efc5",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1643420908798,
+			"name": "redeem",
+			"description": "Melakukan redeem terhadap item yang dipilih\n\nNote: hanya bisa di lakukan dengan user yang sudah ter authentikasi",
+			"collectionId": "7d35bd64-4c7c-5a33-c92d-19725210d815",
+			"responses": []
+		},
+		{
+			"id": "8036b8f4-585d-4c34-a6e1-8b4f0337bcb8",
+			"headers": "Accept: application/json\nAuthorization: Bearer 21|RXUd9LrxvNsQZCbugBcNl9aHlW1PW2F4kllQGZty\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer 21|RXUd9LrxvNsQZCbugBcNl9aHlW1PW2F4kllQGZty",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/phonestore-api/public/api/v1/users/4",
+			"folder": "c2a21e16-9234-d202-d775-d7b5c3250cd8",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PATCH",
+			"data": [
+				{
+					"key": "fullname",
+					"value": "Yogi Sumitra",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "username",
+					"value": "yogisumitra",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1643419144461,
+			"name": "patch",
+			"description": "Melakukan update attribute data User yang di pilih.\n\nNote: hanya bisa di lakukan dengan user yang sudah ter authentikasi",
+			"collectionId": "7d35bd64-4c7c-5a33-c92d-19725210d815",
+			"responses": []
+		},
+		{
+			"id": "c159c451-4048-111c-1af7-caaa7f469e4f",
+			"headers": "Accept: application/json\nAuthorization: Bearer 21|RXUd9LrxvNsQZCbugBcNl9aHlW1PW2F4kllQGZty\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer 21|RXUd9LrxvNsQZCbugBcNl9aHlW1PW2F4kllQGZty",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/phonestore-api/public/api/v1/gifts/8",
+			"folder": "988cb3f9-6b6d-113b-0c9b-62465f65efc5",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1643420374372,
+			"name": "delete",
+			"description": "Melakukan delete Gift yang dipilih.\n\nNote: hanya bisa di lakukan dengan user yang sudah ter authentikasi",
+			"collectionId": "7d35bd64-4c7c-5a33-c92d-19725210d815",
+			"responses": []
+		},
+		{
+			"id": "c671ac3a-672a-639a-7a64-f090965417c4",
+			"headers": "Accept: application/json\nAuthorization: Bearer 21|RXUd9LrxvNsQZCbugBcNl9aHlW1PW2F4kllQGZty\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer 21|RXUd9LrxvNsQZCbugBcNl9aHlW1PW2F4kllQGZty",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/phonestore-api/public/api/v1/users/10",
+			"folder": "c2a21e16-9234-d202-d775-d7b5c3250cd8",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "fullname",
+					"value": "Yogi Sumitra",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "username",
+					"value": "yogisumitra",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1643419247867,
+			"name": "show",
+			"description": "Melakukan detail data User yang dipilih.\n\nNote: hanya bisa di lakukan dengan user yang sudah ter authentikasi",
+			"collectionId": "7d35bd64-4c7c-5a33-c92d-19725210d815",
+			"responses": []
+		},
+		{
+			"id": "cdeb662c-3e2a-80bd-a6b2-524d98a81372",
+			"headers": "Accept: application/json\nAuthorization: Bearer 21|RXUd9LrxvNsQZCbugBcNl9aHlW1PW2F4kllQGZty\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer 21|RXUd9LrxvNsQZCbugBcNl9aHlW1PW2F4kllQGZty",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/phonestore-api/public/api/v1/users/4",
+			"folder": "c2a21e16-9234-d202-d775-d7b5c3250cd8",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [
+				{
+					"key": "fullname",
+					"value": "Yogi Sumitra",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "username",
+					"value": "yogisumitra",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1643419023515,
+			"name": "update",
+			"description": "Melakukan update data User yang di pilih.\n\nNote: hanya bisa di lakukan dengan user yang sudah ter authentikasi",
+			"collectionId": "7d35bd64-4c7c-5a33-c92d-19725210d815",
+			"responses": []
+		},
+		{
+			"id": "f941c51e-9c60-4eba-58bc-fe687e268f65",
+			"headers": "Accept: application/json\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/phonestore-api/public/api/v1/login",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "7d35bd64-4c7c-5a33-c92d-19725210d815",
+			"data": [
+				{
+					"key": "username",
+					"value": "salmanagustian",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "123456",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "login",
+			"description": "Login dengan kredential username dan password.\n\nNote: Token hanya berlaku selama 120 menit.",
+			"descriptionFormat": "html",
+			"time": 1643418379300,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "7e9e7a8a-debe-510a-7ce6-d7945224f24e"
+		}
+	]
+}

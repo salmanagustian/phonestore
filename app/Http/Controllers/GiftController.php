@@ -60,7 +60,7 @@ class GiftController extends Controller
     * @param  \App\Models\Gift $gift
     * @return \Illuminate\Http\Response
     */
-    public function redeem(Gift $gift)
+    public function redeem(Request $request, Gift $gift)
     {
         $stockItem =  (new GiftService)->checkStockItem($gift);
         
@@ -69,7 +69,6 @@ class GiftController extends Controller
                 'status' => false,
                 'message' => 'Tidak dapat melakukan redeem, dikarenakan stok item tidak tersedia.'
             ]);
-             
     }
 
     /**
