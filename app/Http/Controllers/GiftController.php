@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests\GiftRequest;
 use App\Http\Resources\Gift\GiftResource;
 use App\Http\Resources\Gift\GiftCollection;
+use App\Services\GiftService;
 use App\Traits\ResponseUtils;
 
 class GiftController extends Controller
@@ -21,7 +22,7 @@ class GiftController extends Controller
      */
     public function index()
     {
-        return new GiftCollection(Gift::all());
+        return new GiftCollection(Gift::paginate(2));
     }
 
     /**
@@ -43,10 +44,46 @@ class GiftController extends Controller
     public function store(GiftRequest $request)
     {
         $validRequest = $request->validated();
-
         Gift::create(array_merge($validRequest, ['slug' => Str::slug($validRequest['series'])] ));
 
         return $this->sendResponseSuccess(__('response.success'));
+    }
+
+    /**
+    * Give Redeem to specified resource by gift points.
+    *
+    * @param  \App\Models\Gift $gift
+    * @return \Illuminate\Http\Response
+    */
+    public function redeem(Gift $gift)
+    {
+        $stockItem =  (new GiftService)->checkStockItem($gift);
+        
+        if(!$stockItem)
+            return response()->json([
+                'status' => false,
+                'message' => 'Tidak dapat melakukan redeem, dikarenakan stok item tidak tersedia.'
+            ]);
+             
+    }
+
+    /**
+    * Give Rating to specified resource.
+    *
+    * @param  \App\Models\Gift $gift
+    * @param  \Illuminate\Http\Request  $request
+    * @return \Illuminate\Http\Response
+    */
+
+    public function rating(Request $request, Gift $gift)
+    {
+       $rating = (new GiftService)->giveRatingItem($gift, $request);
+
+       if($rating)
+            return response()->json([
+                'status' => true,
+                'message' => 'Berhasil, memberi nilai rating untuk item '.$gift->series
+            ]);
     }
 
     /**

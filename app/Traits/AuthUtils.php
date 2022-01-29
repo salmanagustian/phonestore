@@ -42,18 +42,12 @@ trait AuthUtils
     }
 
     /**
-     * @param array $data valid request
-     * @param object $user data user
-     * @return boolean
+     * @param object $user
+     * @return string Plain Text Token.
      */
-    protected function checkUserPassword(array $data, $user)
+
+    protected function createUserToken($user)
     {
-        $userPassword = $user->password;
-
-        if (!Hash::check($data['password'], $userPassword)) return false;
-
-        $user->generateToken();
-        
-        return true;
+        return $user->createToken('auth_token')->plainTextToken;
     }
 }

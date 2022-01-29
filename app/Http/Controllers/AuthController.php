@@ -3,11 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Traits\AuthUtils;
+use App\Traits\ResponseUtils;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
-    use AuthUtils;
+    use AuthUtils, ResponseUtils;
     
     /**
      * 
@@ -20,17 +22,25 @@ class AuthController extends Controller
 
         $user = $this->getUser($validRequest);
 
-        if(!$user)
-            return response(['status' => false, 'message' => __('passwords.user')]);    
+        if(!$user || !Hash::check($validRequest['password'], $user->password))
+            return $this->sendResponseFail(__('auth.failed'));
 
-        $checkPassword = $this->checkUserPassword($validRequest, $user);
-
-        if(!$checkPassword)
-            return response(['status' => false, 'message' => __('auth.failed')]);  
+        $token = $this->createUserToken($user);
             
         return response()->json([
             'status' => true,
-            'data' => $user
+            'data'   => [
+                'type'       => 'user',
+                'id'         => $user->id,
+                'attributes' => [
+                    'fullname'   => $user->fullname,
+                    'username'   => $user->username,
+                    'points'     => $user->points,
+                    'roles'      => $user->roles,
+                    'created_at' => $user->created_at(),
+                ]
+            ],
+            'token'  => $token
         ]);
     }
 

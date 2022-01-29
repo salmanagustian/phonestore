@@ -23,7 +23,7 @@ class GiftRequest extends FormRequest
      */
     public function rules()
     {
-        $require = request()->method() == 'PUT' ? 'required' : 'sometimes|required';
+        $require = request()->method() == 'PUT' || request()->method() == 'POST' ? 'required' : 'sometimes|required';
 
         return [
             'series'           => $require,

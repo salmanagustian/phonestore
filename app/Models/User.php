@@ -2,14 +2,16 @@
 
 namespace App\Models;
 
+use Carbon\Carbon;
 use Illuminate\Support\Str;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
 {
-    use Notifiable;
+    use HasApiTokens, Notifiable;
 
     const ROLE_ADMIN    = 'admin';
     const ROLE_OPERATOR = 'operator';
@@ -35,10 +37,8 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function generateToken()
+    public function created_at()
     {
-        $this->api_token = Str::random(60);
-        $this->save();
-        return $this->api_token;
+        return Carbon::parse($this->created_at)->format('d F Y');
     }
 }

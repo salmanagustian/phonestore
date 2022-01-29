@@ -28,6 +28,7 @@ class GiftResource extends JsonResource
                 'battery'          => $this->battery,
                 'points'           => $this->points,
                 'stock'            => $this->stock,
+                'rating'            => $this->rating,
                 'total_reviews'    => $this->total_reviews,
             ]
         ];
