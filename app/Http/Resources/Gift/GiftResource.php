@@ -15,8 +15,8 @@ class GiftResource extends JsonResource
     public function toArray($request)
     {
         return [
-            'type' => 'gifts',
-            'id' => $this->id,
+            'type'       => 'gifts',
+            'id'         => $this->id,
             'attributes' => [
                 'series'           => $this->series,
                 'screen'           => $this->screen,

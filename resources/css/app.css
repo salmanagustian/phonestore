@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer utilities {
+    .shadow-bottom {
+        box-shadow: 0 4px 2px -2px rgb(82 63 105 / 5%);
+    }
+
+    .text-success {
+        color : #79B625;
+        opacity: 0.8;
+    }
+}
+
+@layer components {
+    .card {
+        @apply relative flex flex-col min-w-0 break-words
+         bg-white bg-clip-border border-[2px] border-[#D8D8D8] border-solid border-opacity-40 rounded-[0.5rem]
+           px-10 py-8 select-none
+    }
+
+    .btn {
+        @apply 
+        w-full px-5 py-2 rounded-full
+        font-medium align-middle select-none text-base
+        inline-block transition-colors duration-200 ease-in-out
+    }
+
+    .btn-heart {
+        @apply bg-pink-600
+    }
+
+    .btn-outline {
+        @apply border-[1px] border-solid border-gray-200
+    }
+}
