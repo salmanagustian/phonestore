@@ -14,7 +14,13 @@
 </ol>
 
 ## Setup 
-Clone repositori menggunakan SSH atau via HTTPS.
+Clone repository menggunakan SSH atau via HTTPS.
+
+Jika sudah lakukan tahapan berikut:
+
+```bash
+ copy file .env.example menjadi .env
+```
 
 ```bash
 composer install / composer update
