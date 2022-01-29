@@ -16,7 +16,7 @@
 ## Setup 
 Clone repository menggunakan SSH atau via HTTPS.
 
-Jika sudah lakukan tahapan berikut:
+Jika sudah lakukan tahapan berikut di cmd / git bash dst:
 
 ```bash
  copy file .env.example menjadi .env
@@ -37,7 +37,8 @@ Selanjutnya, untuk melakukan generate table jangan lupa setting .env (nama datab
 
 ```bash
 php artisan migrate:refresh --seed
-php artisan serve
+php artisan key:generate
+php artisan serve / php -S localhost:8000 -t public/
 ```
 
 Selanjutnya
