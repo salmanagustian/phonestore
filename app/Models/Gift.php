@@ -12,4 +12,6 @@ class Gift extends Model
     protected $table      = 'gifts';
     protected $guarded    = [];
     public    $timestamps = true;
+
+   
 }

@@ -28,10 +28,15 @@ class GiftResource extends JsonResource
                 'battery'          => $this->battery,
                 'points'           => $this->points,
                 'stock'            => $this->stock,
-                'rating'           => $this->rating,
+                'rating'           => $this->getGiftRating(),
                 'flag'             => $this->flag,
                 'total_reviews'    => $this->total_reviews,
             ]
         ];
+    }
+
+    protected function getGiftRating()
+    {
+        return round($this->rating * 2) / 2;
     }
 }
