@@ -11,9 +11,12 @@
     <body class="antialiased">
 
         <div id="app">
-            {{-- @include('layouts.header') --}}
-            <div class="section">
-                <router-view></router-view>
+            <div class="flex flex-col h-screen">
+                @include('layouts.header')
+                    <div class="flex-grow mt-8">
+                        <router-view></router-view>
+                    </div>
+                @include('layouts.footer')
             </div>
         </div>
     

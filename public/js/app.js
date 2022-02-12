@@ -1,6 +1,17 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./node_modules/@babel/runtime/regenerator/index.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
+  \**********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__(/*! regenerator-runtime */ "./node_modules/regenerator-runtime/runtime.js");
+
+
+/***/ }),
+
 /***/ "./node_modules/axios/index.js":
 /*!*************************************!*\
   !*** ./node_modules/axios/index.js ***!
@@ -2167,129 +2178,120 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _components_Navbar_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/Navbar.vue */ "./resources/js/views/components/Navbar.vue");
-/* harmony import */ var _components_Footer_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Footer.vue */ "./resources/js/views/components/Footer.vue");
-/* harmony import */ var _components_ButtonHeart_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/ButtonHeart.vue */ "./resources/js/views/components/ButtonHeart.vue");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_ButtonHeart_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/ButtonHeart.vue */ "./resources/js/views/components/ButtonHeart.vue");
 
 
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'DetailGift',
   components: {
-    Navbar: _components_Navbar_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
-    Footer: _components_Footer_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
-    ButtonHeart: _components_ButtonHeart_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
+    ButtonHeart: _components_ButtonHeart_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
   data: function data() {
     return {
@@ -2308,14 +2310,38 @@ __webpack_require__.r(__webpack_exports__);
     fetchDetailData: function fetchDetailData() {
       var _this = this;
 
-      var id = this.$route.params.id;
-      axios.get("/api/v1/gifts/".concat(id)).then(function (_ref) {
-        var data = _ref.data;
-        var giftData = data.data;
-        _this.gift = giftData;
-      })["catch"](function (err) {
-        return console.log(err);
-      });
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee() {
+        var id, _yield$axios$get, data, giftData;
+
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                id = _this.$route.params.id;
+                _context.next = 3;
+                return axios.get("/api/v1/gifts/".concat(id));
+
+              case 3:
+                _yield$axios$get = _context.sent;
+                data = _yield$axios$get.data;
+                _context.next = 7;
+                return data.data;
+
+              case 7:
+                giftData = _context.sent;
+                _context.next = 10;
+                return giftData;
+
+              case 10:
+                _this.gift = _context.sent;
+
+              case 11:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }))();
     },
     stockFormatClass: function stockFormatClass(stock) {
       if (stock == 0 || stock < 5) return 'text-pink-600';else return 'text-success';
@@ -2344,18 +2370,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_SectionFilter_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/SectionFilter.vue */ "./resources/js/views/components/SectionFilter.vue");
 /* harmony import */ var _components_SectionProduct_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/SectionProduct.vue */ "./resources/js/views/components/SectionProduct.vue");
 /* harmony import */ var _components_ListProducts_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/ListProducts.vue */ "./resources/js/views/components/ListProducts.vue");
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2459,22 +2489,27 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     return {
       gifts: [],
       checkedFilterRating: '',
-      checkedFilterStock: ''
+      checkedFilterStock: '',
+      pagination_links: {
+        first: '',
+        last: '',
+        prev: '',
+        next: ''
+      },
+      paginations: {
+        current_page: '',
+        from: '',
+        last_page: '',
+        path: '',
+        per_page: '',
+        to: '',
+        total: ''
+      },
+      currentPage: 1
     };
   },
   created: function created() {
-    var _this = this;
-
-    axios.get('/api/v1/gifts').then(function (_ref) {
-      var _this$gifts;
-
-      var data = _ref.data;
-      var giftsData = data.data;
-
-      (_this$gifts = _this.gifts).push.apply(_this$gifts, _toConsumableArray(giftsData));
-    })["catch"](function (err) {
-      return console.log(err);
-    });
+    this.getResults(this.currentPage, null);
   },
   computed: {
     filteredPhone: function filteredPhone() {
@@ -2488,20 +2523,51 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
       if (this.checkedFilterRating) return this.gifts.filter(function (gift) {
         return gift.attributes.rating > 4;
       });
+    },
+    classCursorPrev: function classCursorPrev() {
+      return {
+        'cursor-pointer text-gray-700': this.pagination_links.prev !== null,
+        'cursor-not-allowed text-gray-400': this.pagination_links.prev === null
+      };
+    },
+    classCursorNext: function classCursorNext() {
+      return {
+        'cursor-pointer text-gray-700': this.pagination_links.next !== null,
+        'cursor-not-allowed text-gray-400': this.pagination_links.next === null
+      };
     }
   },
   methods: {
     getResults: function getResults(page) {
-      var _this2 = this;
+      var _this = this;
 
-      if (typeof page === 'undefined') {
-        page = 1;
-      }
+      var urlPage = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
+      var url = '';
+      if (urlPage !== null) url += urlPage;else url += "/api/v1/gifts?page=".concat(page);
+      axios.get("".concat(url)).then(function (_ref) {
+        var data = _ref.data;
+        var giftsData = data.data;
+        var links = data.links;
+        var pagination = data.meta;
+        _this.gifts = giftsData; // pagination links
 
-      axios.get('/api/v1/gifts?page=' + page).then(function (response) {
-        return response.json();
-      }).then(function (data) {
-        _this2.giftsData = data;
+        _this.pagination_links.first = links.first;
+        _this.pagination_links.last = links.last;
+        _this.pagination_links.prev = links.prev;
+        _this.pagination_links.next = links.next; // pagination
+
+        _this.paginations.current_page = pagination.current_page;
+        _this.paginations.from = pagination.from;
+        _this.paginations.last_page = pagination.last_page;
+        _this.paginations.path = pagination.path;
+        _this.paginations.per_page = pagination.per_page;
+        _this.paginations.to = pagination.to;
+        _this.paginations.total = pagination.total;
+        document.getElementById('app').scrollIntoView({
+          behavior: 'smooth'
+        });
+      })["catch"](function (err) {
+        return console.log(err);
       });
     }
   }
@@ -2585,6 +2651,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -3801,6 +3873,770 @@ process.umask = function() { return 0; };
 
 /***/ }),
 
+/***/ "./node_modules/regenerator-runtime/runtime.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/regenerator-runtime/runtime.js ***!
+  \*****************************************************/
+/***/ ((module) => {
+
+/**
+ * Copyright (c) 2014-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+var runtime = (function (exports) {
+  "use strict";
+
+  var Op = Object.prototype;
+  var hasOwn = Op.hasOwnProperty;
+  var undefined; // More compressible than void 0.
+  var $Symbol = typeof Symbol === "function" ? Symbol : {};
+  var iteratorSymbol = $Symbol.iterator || "@@iterator";
+  var asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator";
+  var toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag";
+
+  function define(obj, key, value) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+    return obj[key];
+  }
+  try {
+    // IE 8 has a broken Object.defineProperty that only works on DOM objects.
+    define({}, "");
+  } catch (err) {
+    define = function(obj, key, value) {
+      return obj[key] = value;
+    };
+  }
+
+  function wrap(innerFn, outerFn, self, tryLocsList) {
+    // If outerFn provided and outerFn.prototype is a Generator, then outerFn.prototype instanceof Generator.
+    var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator;
+    var generator = Object.create(protoGenerator.prototype);
+    var context = new Context(tryLocsList || []);
+
+    // The ._invoke method unifies the implementations of the .next,
+    // .throw, and .return methods.
+    generator._invoke = makeInvokeMethod(innerFn, self, context);
+
+    return generator;
+  }
+  exports.wrap = wrap;
+
+  // Try/catch helper to minimize deoptimizations. Returns a completion
+  // record like context.tryEntries[i].completion. This interface could
+  // have been (and was previously) designed to take a closure to be
+  // invoked without arguments, but in all the cases we care about we
+  // already have an existing method we want to call, so there's no need
+  // to create a new function object. We can even get away with assuming
+  // the method takes exactly one argument, since that happens to be true
+  // in every case, so we don't have to touch the arguments object. The
+  // only additional allocation required is the completion record, which
+  // has a stable shape and so hopefully should be cheap to allocate.
+  function tryCatch(fn, obj, arg) {
+    try {
+      return { type: "normal", arg: fn.call(obj, arg) };
+    } catch (err) {
+      return { type: "throw", arg: err };
+    }
+  }
+
+  var GenStateSuspendedStart = "suspendedStart";
+  var GenStateSuspendedYield = "suspendedYield";
+  var GenStateExecuting = "executing";
+  var GenStateCompleted = "completed";
+
+  // Returning this object from the innerFn has the same effect as
+  // breaking out of the dispatch switch statement.
+  var ContinueSentinel = {};
+
+  // Dummy constructor functions that we use as the .constructor and
+  // .constructor.prototype properties for functions that return Generator
+  // objects. For full spec compliance, you may wish to configure your
+  // minifier not to mangle the names of these two functions.
+  function Generator() {}
+  function GeneratorFunction() {}
+  function GeneratorFunctionPrototype() {}
+
+  // This is a polyfill for %IteratorPrototype% for environments that
+  // don't natively support it.
+  var IteratorPrototype = {};
+  define(IteratorPrototype, iteratorSymbol, function () {
+    return this;
+  });
+
+  var getProto = Object.getPrototypeOf;
+  var NativeIteratorPrototype = getProto && getProto(getProto(values([])));
+  if (NativeIteratorPrototype &&
+      NativeIteratorPrototype !== Op &&
+      hasOwn.call(NativeIteratorPrototype, iteratorSymbol)) {
+    // This environment has a native %IteratorPrototype%; use it instead
+    // of the polyfill.
+    IteratorPrototype = NativeIteratorPrototype;
+  }
+
+  var Gp = GeneratorFunctionPrototype.prototype =
+    Generator.prototype = Object.create(IteratorPrototype);
+  GeneratorFunction.prototype = GeneratorFunctionPrototype;
+  define(Gp, "constructor", GeneratorFunctionPrototype);
+  define(GeneratorFunctionPrototype, "constructor", GeneratorFunction);
+  GeneratorFunction.displayName = define(
+    GeneratorFunctionPrototype,
+    toStringTagSymbol,
+    "GeneratorFunction"
+  );
+
+  // Helper for defining the .next, .throw, and .return methods of the
+  // Iterator interface in terms of a single ._invoke method.
+  function defineIteratorMethods(prototype) {
+    ["next", "throw", "return"].forEach(function(method) {
+      define(prototype, method, function(arg) {
+        return this._invoke(method, arg);
+      });
+    });
+  }
+
+  exports.isGeneratorFunction = function(genFun) {
+    var ctor = typeof genFun === "function" && genFun.constructor;
+    return ctor
+      ? ctor === GeneratorFunction ||
+        // For the native GeneratorFunction constructor, the best we can
+        // do is to check its .name property.
+        (ctor.displayName || ctor.name) === "GeneratorFunction"
+      : false;
+  };
+
+  exports.mark = function(genFun) {
+    if (Object.setPrototypeOf) {
+      Object.setPrototypeOf(genFun, GeneratorFunctionPrototype);
+    } else {
+      genFun.__proto__ = GeneratorFunctionPrototype;
+      define(genFun, toStringTagSymbol, "GeneratorFunction");
+    }
+    genFun.prototype = Object.create(Gp);
+    return genFun;
+  };
+
+  // Within the body of any async function, `await x` is transformed to
+  // `yield regeneratorRuntime.awrap(x)`, so that the runtime can test
+  // `hasOwn.call(value, "__await")` to determine if the yielded value is
+  // meant to be awaited.
+  exports.awrap = function(arg) {
+    return { __await: arg };
+  };
+
+  function AsyncIterator(generator, PromiseImpl) {
+    function invoke(method, arg, resolve, reject) {
+      var record = tryCatch(generator[method], generator, arg);
+      if (record.type === "throw") {
+        reject(record.arg);
+      } else {
+        var result = record.arg;
+        var value = result.value;
+        if (value &&
+            typeof value === "object" &&
+            hasOwn.call(value, "__await")) {
+          return PromiseImpl.resolve(value.__await).then(function(value) {
+            invoke("next", value, resolve, reject);
+          }, function(err) {
+            invoke("throw", err, resolve, reject);
+          });
+        }
+
+        return PromiseImpl.resolve(value).then(function(unwrapped) {
+          // When a yielded Promise is resolved, its final value becomes
+          // the .value of the Promise<{value,done}> result for the
+          // current iteration.
+          result.value = unwrapped;
+          resolve(result);
+        }, function(error) {
+          // If a rejected Promise was yielded, throw the rejection back
+          // into the async generator function so it can be handled there.
+          return invoke("throw", error, resolve, reject);
+        });
+      }
+    }
+
+    var previousPromise;
+
+    function enqueue(method, arg) {
+      function callInvokeWithMethodAndArg() {
+        return new PromiseImpl(function(resolve, reject) {
+          invoke(method, arg, resolve, reject);
+        });
+      }
+
+      return previousPromise =
+        // If enqueue has been called before, then we want to wait until
+        // all previous Promises have been resolved before calling invoke,
+        // so that results are always delivered in the correct order. If
+        // enqueue has not been called before, then it is important to
+        // call invoke immediately, without waiting on a callback to fire,
+        // so that the async generator function has the opportunity to do
+        // any necessary setup in a predictable way. This predictability
+        // is why the Promise constructor synchronously invokes its
+        // executor callback, and why async functions synchronously
+        // execute code before the first await. Since we implement simple
+        // async functions in terms of async generators, it is especially
+        // important to get this right, even though it requires care.
+        previousPromise ? previousPromise.then(
+          callInvokeWithMethodAndArg,
+          // Avoid propagating failures to Promises returned by later
+          // invocations of the iterator.
+          callInvokeWithMethodAndArg
+        ) : callInvokeWithMethodAndArg();
+    }
+
+    // Define the unified helper method that is used to implement .next,
+    // .throw, and .return (see defineIteratorMethods).
+    this._invoke = enqueue;
+  }
+
+  defineIteratorMethods(AsyncIterator.prototype);
+  define(AsyncIterator.prototype, asyncIteratorSymbol, function () {
+    return this;
+  });
+  exports.AsyncIterator = AsyncIterator;
+
+  // Note that simple async functions are implemented on top of
+  // AsyncIterator objects; they just return a Promise for the value of
+  // the final result produced by the iterator.
+  exports.async = function(innerFn, outerFn, self, tryLocsList, PromiseImpl) {
+    if (PromiseImpl === void 0) PromiseImpl = Promise;
+
+    var iter = new AsyncIterator(
+      wrap(innerFn, outerFn, self, tryLocsList),
+      PromiseImpl
+    );
+
+    return exports.isGeneratorFunction(outerFn)
+      ? iter // If outerFn is a generator, return the full iterator.
+      : iter.next().then(function(result) {
+          return result.done ? result.value : iter.next();
+        });
+  };
+
+  function makeInvokeMethod(innerFn, self, context) {
+    var state = GenStateSuspendedStart;
+
+    return function invoke(method, arg) {
+      if (state === GenStateExecuting) {
+        throw new Error("Generator is already running");
+      }
+
+      if (state === GenStateCompleted) {
+        if (method === "throw") {
+          throw arg;
+        }
+
+        // Be forgiving, per 25.3.3.3.3 of the spec:
+        // https://people.mozilla.org/~jorendorff/es6-draft.html#sec-generatorresume
+        return doneResult();
+      }
+
+      context.method = method;
+      context.arg = arg;
+
+      while (true) {
+        var delegate = context.delegate;
+        if (delegate) {
+          var delegateResult = maybeInvokeDelegate(delegate, context);
+          if (delegateResult) {
+            if (delegateResult === ContinueSentinel) continue;
+            return delegateResult;
+          }
+        }
+
+        if (context.method === "next") {
+          // Setting context._sent for legacy support of Babel's
+          // function.sent implementation.
+          context.sent = context._sent = context.arg;
+
+        } else if (context.method === "throw") {
+          if (state === GenStateSuspendedStart) {
+            state = GenStateCompleted;
+            throw context.arg;
+          }
+
+          context.dispatchException(context.arg);
+
+        } else if (context.method === "return") {
+          context.abrupt("return", context.arg);
+        }
+
+        state = GenStateExecuting;
+
+        var record = tryCatch(innerFn, self, context);
+        if (record.type === "normal") {
+          // If an exception is thrown from innerFn, we leave state ===
+          // GenStateExecuting and loop back for another invocation.
+          state = context.done
+            ? GenStateCompleted
+            : GenStateSuspendedYield;
+
+          if (record.arg === ContinueSentinel) {
+            continue;
+          }
+
+          return {
+            value: record.arg,
+            done: context.done
+          };
+
+        } else if (record.type === "throw") {
+          state = GenStateCompleted;
+          // Dispatch the exception by looping back around to the
+          // context.dispatchException(context.arg) call above.
+          context.method = "throw";
+          context.arg = record.arg;
+        }
+      }
+    };
+  }
+
+  // Call delegate.iterator[context.method](context.arg) and handle the
+  // result, either by returning a { value, done } result from the
+  // delegate iterator, or by modifying context.method and context.arg,
+  // setting context.delegate to null, and returning the ContinueSentinel.
+  function maybeInvokeDelegate(delegate, context) {
+    var method = delegate.iterator[context.method];
+    if (method === undefined) {
+      // A .throw or .return when the delegate iterator has no .throw
+      // method always terminates the yield* loop.
+      context.delegate = null;
+
+      if (context.method === "throw") {
+        // Note: ["return"] must be used for ES3 parsing compatibility.
+        if (delegate.iterator["return"]) {
+          // If the delegate iterator has a return method, give it a
+          // chance to clean up.
+          context.method = "return";
+          context.arg = undefined;
+          maybeInvokeDelegate(delegate, context);
+
+          if (context.method === "throw") {
+            // If maybeInvokeDelegate(context) changed context.method from
+            // "return" to "throw", let that override the TypeError below.
+            return ContinueSentinel;
+          }
+        }
+
+        context.method = "throw";
+        context.arg = new TypeError(
+          "The iterator does not provide a 'throw' method");
+      }
+
+      return ContinueSentinel;
+    }
+
+    var record = tryCatch(method, delegate.iterator, context.arg);
+
+    if (record.type === "throw") {
+      context.method = "throw";
+      context.arg = record.arg;
+      context.delegate = null;
+      return ContinueSentinel;
+    }
+
+    var info = record.arg;
+
+    if (! info) {
+      context.method = "throw";
+      context.arg = new TypeError("iterator result is not an object");
+      context.delegate = null;
+      return ContinueSentinel;
+    }
+
+    if (info.done) {
+      // Assign the result of the finished delegate to the temporary
+      // variable specified by delegate.resultName (see delegateYield).
+      context[delegate.resultName] = info.value;
+
+      // Resume execution at the desired location (see delegateYield).
+      context.next = delegate.nextLoc;
+
+      // If context.method was "throw" but the delegate handled the
+      // exception, let the outer generator proceed normally. If
+      // context.method was "next", forget context.arg since it has been
+      // "consumed" by the delegate iterator. If context.method was
+      // "return", allow the original .return call to continue in the
+      // outer generator.
+      if (context.method !== "return") {
+        context.method = "next";
+        context.arg = undefined;
+      }
+
+    } else {
+      // Re-yield the result returned by the delegate method.
+      return info;
+    }
+
+    // The delegate iterator is finished, so forget it and continue with
+    // the outer generator.
+    context.delegate = null;
+    return ContinueSentinel;
+  }
+
+  // Define Generator.prototype.{next,throw,return} in terms of the
+  // unified ._invoke helper method.
+  defineIteratorMethods(Gp);
+
+  define(Gp, toStringTagSymbol, "Generator");
+
+  // A Generator should always return itself as the iterator object when the
+  // @@iterator function is called on it. Some browsers' implementations of the
+  // iterator prototype chain incorrectly implement this, causing the Generator
+  // object to not be returned from this call. This ensures that doesn't happen.
+  // See https://github.com/facebook/regenerator/issues/274 for more details.
+  define(Gp, iteratorSymbol, function() {
+    return this;
+  });
+
+  define(Gp, "toString", function() {
+    return "[object Generator]";
+  });
+
+  function pushTryEntry(locs) {
+    var entry = { tryLoc: locs[0] };
+
+    if (1 in locs) {
+      entry.catchLoc = locs[1];
+    }
+
+    if (2 in locs) {
+      entry.finallyLoc = locs[2];
+      entry.afterLoc = locs[3];
+    }
+
+    this.tryEntries.push(entry);
+  }
+
+  function resetTryEntry(entry) {
+    var record = entry.completion || {};
+    record.type = "normal";
+    delete record.arg;
+    entry.completion = record;
+  }
+
+  function Context(tryLocsList) {
+    // The root entry object (effectively a try statement without a catch
+    // or a finally block) gives us a place to store values thrown from
+    // locations where there is no enclosing try statement.
+    this.tryEntries = [{ tryLoc: "root" }];
+    tryLocsList.forEach(pushTryEntry, this);
+    this.reset(true);
+  }
+
+  exports.keys = function(object) {
+    var keys = [];
+    for (var key in object) {
+      keys.push(key);
+    }
+    keys.reverse();
+
+    // Rather than returning an object with a next method, we keep
+    // things simple and return the next function itself.
+    return function next() {
+      while (keys.length) {
+        var key = keys.pop();
+        if (key in object) {
+          next.value = key;
+          next.done = false;
+          return next;
+        }
+      }
+
+      // To avoid creating an additional object, we just hang the .value
+      // and .done properties off the next function object itself. This
+      // also ensures that the minifier will not anonymize the function.
+      next.done = true;
+      return next;
+    };
+  };
+
+  function values(iterable) {
+    if (iterable) {
+      var iteratorMethod = iterable[iteratorSymbol];
+      if (iteratorMethod) {
+        return iteratorMethod.call(iterable);
+      }
+
+      if (typeof iterable.next === "function") {
+        return iterable;
+      }
+
+      if (!isNaN(iterable.length)) {
+        var i = -1, next = function next() {
+          while (++i < iterable.length) {
+            if (hasOwn.call(iterable, i)) {
+              next.value = iterable[i];
+              next.done = false;
+              return next;
+            }
+          }
+
+          next.value = undefined;
+          next.done = true;
+
+          return next;
+        };
+
+        return next.next = next;
+      }
+    }
+
+    // Return an iterator with no values.
+    return { next: doneResult };
+  }
+  exports.values = values;
+
+  function doneResult() {
+    return { value: undefined, done: true };
+  }
+
+  Context.prototype = {
+    constructor: Context,
+
+    reset: function(skipTempReset) {
+      this.prev = 0;
+      this.next = 0;
+      // Resetting context._sent for legacy support of Babel's
+      // function.sent implementation.
+      this.sent = this._sent = undefined;
+      this.done = false;
+      this.delegate = null;
+
+      this.method = "next";
+      this.arg = undefined;
+
+      this.tryEntries.forEach(resetTryEntry);
+
+      if (!skipTempReset) {
+        for (var name in this) {
+          // Not sure about the optimal order of these conditions:
+          if (name.charAt(0) === "t" &&
+              hasOwn.call(this, name) &&
+              !isNaN(+name.slice(1))) {
+            this[name] = undefined;
+          }
+        }
+      }
+    },
+
+    stop: function() {
+      this.done = true;
+
+      var rootEntry = this.tryEntries[0];
+      var rootRecord = rootEntry.completion;
+      if (rootRecord.type === "throw") {
+        throw rootRecord.arg;
+      }
+
+      return this.rval;
+    },
+
+    dispatchException: function(exception) {
+      if (this.done) {
+        throw exception;
+      }
+
+      var context = this;
+      function handle(loc, caught) {
+        record.type = "throw";
+        record.arg = exception;
+        context.next = loc;
+
+        if (caught) {
+          // If the dispatched exception was caught by a catch block,
+          // then let that catch block handle the exception normally.
+          context.method = "next";
+          context.arg = undefined;
+        }
+
+        return !! caught;
+      }
+
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        var record = entry.completion;
+
+        if (entry.tryLoc === "root") {
+          // Exception thrown outside of any try block that could handle
+          // it, so set the completion value of the entire function to
+          // throw the exception.
+          return handle("end");
+        }
+
+        if (entry.tryLoc <= this.prev) {
+          var hasCatch = hasOwn.call(entry, "catchLoc");
+          var hasFinally = hasOwn.call(entry, "finallyLoc");
+
+          if (hasCatch && hasFinally) {
+            if (this.prev < entry.catchLoc) {
+              return handle(entry.catchLoc, true);
+            } else if (this.prev < entry.finallyLoc) {
+              return handle(entry.finallyLoc);
+            }
+
+          } else if (hasCatch) {
+            if (this.prev < entry.catchLoc) {
+              return handle(entry.catchLoc, true);
+            }
+
+          } else if (hasFinally) {
+            if (this.prev < entry.finallyLoc) {
+              return handle(entry.finallyLoc);
+            }
+
+          } else {
+            throw new Error("try statement without catch or finally");
+          }
+        }
+      }
+    },
+
+    abrupt: function(type, arg) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.tryLoc <= this.prev &&
+            hasOwn.call(entry, "finallyLoc") &&
+            this.prev < entry.finallyLoc) {
+          var finallyEntry = entry;
+          break;
+        }
+      }
+
+      if (finallyEntry &&
+          (type === "break" ||
+           type === "continue") &&
+          finallyEntry.tryLoc <= arg &&
+          arg <= finallyEntry.finallyLoc) {
+        // Ignore the finally entry if control is not jumping to a
+        // location outside the try/catch block.
+        finallyEntry = null;
+      }
+
+      var record = finallyEntry ? finallyEntry.completion : {};
+      record.type = type;
+      record.arg = arg;
+
+      if (finallyEntry) {
+        this.method = "next";
+        this.next = finallyEntry.finallyLoc;
+        return ContinueSentinel;
+      }
+
+      return this.complete(record);
+    },
+
+    complete: function(record, afterLoc) {
+      if (record.type === "throw") {
+        throw record.arg;
+      }
+
+      if (record.type === "break" ||
+          record.type === "continue") {
+        this.next = record.arg;
+      } else if (record.type === "return") {
+        this.rval = this.arg = record.arg;
+        this.method = "return";
+        this.next = "end";
+      } else if (record.type === "normal" && afterLoc) {
+        this.next = afterLoc;
+      }
+
+      return ContinueSentinel;
+    },
+
+    finish: function(finallyLoc) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.finallyLoc === finallyLoc) {
+          this.complete(entry.completion, entry.afterLoc);
+          resetTryEntry(entry);
+          return ContinueSentinel;
+        }
+      }
+    },
+
+    "catch": function(tryLoc) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.tryLoc === tryLoc) {
+          var record = entry.completion;
+          if (record.type === "throw") {
+            var thrown = record.arg;
+            resetTryEntry(entry);
+          }
+          return thrown;
+        }
+      }
+
+      // The context.catch method must only be called with a location
+      // argument that corresponds to a known catch block.
+      throw new Error("illegal catch attempt");
+    },
+
+    delegateYield: function(iterable, resultName, nextLoc) {
+      this.delegate = {
+        iterator: values(iterable),
+        resultName: resultName,
+        nextLoc: nextLoc
+      };
+
+      if (this.method === "next") {
+        // Deliberately forget the last sent value so that we don't
+        // accidentally pass it on to the delegate.
+        this.arg = undefined;
+      }
+
+      return ContinueSentinel;
+    }
+  };
+
+  // Regardless of whether this script is executing as a CommonJS module
+  // or not, return the runtime object so that we can declare the variable
+  // regeneratorRuntime in the outer scope, which allows this module to be
+  // injected easily by `bin/regenerator --include-runtime script.js`.
+  return exports;
+
+}(
+  // If this script is executing as a CommonJS module, use module.exports
+  // as the regeneratorRuntime namespace. Otherwise create a new empty
+  // object. Either way, the resulting object will be used to initialize
+  // the regeneratorRuntime variable at the top of this file.
+   true ? module.exports : 0
+));
+
+try {
+  regeneratorRuntime = runtime;
+} catch (accidentalStrictMode) {
+  // This module should not be running in strict mode, so the above
+  // assignment should always work unless something is misconfigured. Just
+  // in case runtime.js accidentally runs in strict mode, in modern engines
+  // we can explicitly access globalThis. In older engines we can escape
+  // strict mode using a global Function call. This could conceivably fail
+  // if a Content Security Policy forbids using Function, but in that case
+  // the proper solution is to fix the accidental strict mode problem. If
+  // you've misconfigured your bundler to force strict mode and applied a
+  // CSP to forbid Function, and you're not willing to fix either of those
+  // problems, please detail your unique predicament in a GitHub issue.
+  if (typeof globalThis === "object") {
+    globalThis.regeneratorRuntime = runtime;
+  } else {
+    Function("r", "regeneratorRuntime = r")(runtime);
+  }
+}
+
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/DetailGift.vue?vue&type=style&index=0&id=56fdab00&scoped=true&lang=css&":
 /*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/DetailGift.vue?vue&type=style&index=0&id=56fdab00&scoped=true&lang=css& ***!
@@ -4717,251 +5553,277 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "flex flex-col h-screen" }, [
-    _c("div", [_c("Navbar")], 1),
-    _vm._v(" "),
-    _c("div", { staticClass: "flex-grow my-8" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "flex space-x-2 select-none" }, [
-          _c("div", [
-            _c(
-              "a",
-              {
-                staticClass: "cursor-pointer",
-                on: {
-                  click: function ($event) {
-                    return _vm.$router.go(-1)
+  return _vm.gift.attributes
+    ? _c("div", [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "flex flex-row space-x-2 select-none" }, [
+            _c("div", { staticClass: "flex-shrink-0" }, [
+              _c(
+                "a",
+                {
+                  staticClass: "cursor-pointer",
+                  on: {
+                    click: function ($event) {
+                      return _vm.$router.go(-1)
+                    },
                   },
                 },
-              },
-              [_vm._v("List Product")]
-            ),
-          ]),
-          _vm._v(" "),
-          _c("div", [_vm._v(" > ")]),
-          _vm._v(" "),
-          _c("div", [
-            _vm._v(
-              "\n                    " +
-                _vm._s(_vm.gift.attributes.series) +
-                "\n                "
-            ),
-          ]),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "flex gap-16 px-32" }, [
-          _c("div", [
-            _c("div", { staticClass: "relative" }, [
-              _c(
-                "div",
-                {
-                  staticClass: "absolute top-[-6px] right-[-7px]",
-                  class: _vm.gift.attributes.flag == 4 ? "hidden" : "block",
-                },
-                [
-                  _c("img", {
-                    attrs: {
-                      src: _vm.giftFormatImage(_vm.gift.attributes.flag),
-                      alt: "Badge Hot Item",
-                    },
-                  }),
-                ]
+                [_vm._v("List Product > ")]
               ),
-              _vm._v(" "),
-              _c("img", {
-                staticClass: "object-contain w-full select-none h-[500px]",
-                attrs: { src: "/images/phone-2x.png", alt: "Phone" },
-              }),
+            ]),
+            _vm._v(" "),
+            _c("div", [
+              _vm._v(
+                "\n                " +
+                  _vm._s(_vm.gift.attributes.series) +
+                  "\n            "
+              ),
             ]),
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "w-[35%]" }, [
-            _c("div", { staticClass: "flex flex-col space-y-8" }, [
-              _c("div", [
-                _c(
-                  "div",
-                  { staticClass: "text-2xl font-bold text-[#262626]" },
-                  [_vm._v(_vm._s(_vm.gift.attributes.series))]
-                ),
-                _vm._v(" "),
-                _c("div", { staticClass: "flex items-center gap-3 my-4" }, [
-                  _vm._m(0),
-                  _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "flex flex-col lg:flex-row lg:gap-8 my-10" },
+            [
+              _c("div", { staticClass: "lg:basis-3/4 xl:basis-2/5" }, [
+                _c("div", { staticClass: "relative select-none" }, [
                   _c(
-                    "span",
-                    { staticClass: "text-[#838EAB] text-sm font-light" },
+                    "div",
+                    {
+                      staticClass: "absolute top-[-6px] right-[-7px]",
+                      class: _vm.gift.attributes.flag == 4 ? "hidden" : "block",
+                    },
                     [
-                      _vm._v(
-                        _vm._s(_vm.gift.attributes.total_reviews) + " reviews"
-                      ),
+                      _vm.gift.attributes.flag
+                        ? _c("img", {
+                            attrs: {
+                              src: _vm.giftFormatImage(
+                                _vm.gift.attributes.flag
+                              ),
+                              alt: "Badge Hot Item",
+                            },
+                          })
+                        : _vm._e(),
                     ]
                   ),
+                  _vm._v(" "),
+                  _c("img", {
+                    staticClass: "object-contain mx-auto",
+                    attrs: { src: "/images/phone-2x.png", alt: "Phone" },
+                  }),
                 ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "flex" }, [
-                  _c("div", { staticClass: "flex items-center gap-2" }, [
-                    _c("img", {
-                      staticClass: "w-4 h-4",
-                      attrs: {
-                        src: "/images/badge-points-detail.svg",
-                        alt: "Badge Points Detail",
-                      },
-                    }),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "lg:basis-7/12 xl:basis-2/5" }, [
+                _c("div", { staticClass: "flex flex-col space-y-8" }, [
+                  _c("div", [
+                    _c(
+                      "div",
+                      { staticClass: "text-2xl font-bold text-[#262626]" },
+                      [_vm._v(_vm._s(_vm.gift.attributes.series))]
+                    ),
                     _vm._v(" "),
-                    _c("p", { staticClass: "text-xl font-bold text-success" }, [
-                      _vm._v(_vm._s(_vm.gift.attributes.points) + " poins"),
+                    _c("div", { staticClass: "flex items-center gap-3 my-4" }, [
+                      _vm._m(0),
+                      _vm._v(" "),
+                      _c(
+                        "span",
+                        { staticClass: "text-[#838EAB] text-sm font-light" },
+                        [
+                          _vm._v(
+                            _vm._s(_vm.gift.attributes.total_reviews) +
+                              " reviews"
+                          ),
+                        ]
+                      ),
                     ]),
                     _vm._v(" "),
+                    _c("div", { staticClass: "flex" }, [
+                      _c("div", { staticClass: "flex items-center gap-2" }, [
+                        _c("img", {
+                          staticClass: "w-4 h-4",
+                          attrs: {
+                            src: "/images/badge-points-detail.svg",
+                            alt: "Badge Points Detail",
+                          },
+                        }),
+                        _vm._v(" "),
+                        _c(
+                          "p",
+                          { staticClass: "text-xl font-bold text-success" },
+                          [
+                            _vm._v(
+                              _vm._s(_vm.gift.attributes.points) + " poins"
+                            ),
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "p",
+                          {
+                            staticClass: "ml-4 font-semibold",
+                            class: _vm.stockFormatClass(
+                              _vm.gift.attributes.stock
+                            ),
+                          },
+                          [
+                            _vm._v(
+                              _vm._s(
+                                _vm._f("stockFormatLabel")(
+                                  _vm.gift.attributes.stock
+                                )
+                              )
+                            ),
+                          ]
+                        ),
+                      ]),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", [
                     _c(
                       "p",
-                      {
-                        staticClass: "ml-4 font-semibold",
-                        class: _vm.stockFormatClass(_vm.gift.attributes.stock),
-                      },
+                      { staticClass: "text-[#262626] font-medium text-md" },
                       [
                         _vm._v(
-                          _vm._s(
-                            _vm._f("stockFormatLabel")(
-                              _vm.gift.attributes.stock
-                            )
-                          )
+                          "\n                        " +
+                            _vm._s(_vm.gift.attributes.screen) +
+                            " Memori: " +
+                            _vm._s(_vm.gift.attributes.memory) +
+                            " Sistem Operasi " +
+                            _vm._s(_vm.gift.attributes.operation_system) +
+                            "\n                    "
                         ),
                       ]
                     ),
                   ]),
-                ]),
-              ]),
-              _vm._v(" "),
-              _c("div", [
-                _c("p", { staticClass: "text-[#262626] font-medium text-md" }, [
-                  _vm._v(
-                    "\n                            " +
-                      _vm._s(_vm.gift.attributes.screen) +
-                      " Memori: " +
-                      _vm._s(_vm.gift.attributes.memory) +
-                      " Sistem Operasi " +
-                      _vm._s(_vm.gift.attributes.operation_system) +
-                      "\n                        "
+                  _vm._v(" "),
+                  _c("div", [
+                    _vm._v("\n                    Jumlah\n                "),
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "flex flex-col md:flex-row flex-wrap justify-start items-start space-y-2 md:space-y-0 md:space-x-2",
+                    },
+                    [
+                      _c("div", { staticClass: "flex-shrink-0" }, [
+                        _c(
+                          "button",
+                          { staticClass: "w-16 h-12 btn btn-heart" },
+                          [
+                            _c(
+                              "svg",
+                              {
+                                staticClass: "w-6 h-6 fill-white",
+                                attrs: {
+                                  xmlns: "http://www.w3.org/2000/svg",
+                                  viewBox: "0 0 20 20",
+                                },
+                              },
+                              [
+                                _c("path", {
+                                  attrs: {
+                                    "fill-rule": "evenodd",
+                                    d: "M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z",
+                                    "clip-rule": "evenodd",
+                                  },
+                                }),
+                              ]
+                            ),
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _vm._m(1),
+                      ]),
+                      _vm._v(" "),
+                      _vm._m(2),
+                      _vm._v(" "),
+                      _c("div"),
+                    ]
                   ),
                 ]),
-              ]),
-              _vm._v(" "),
-              _c("div", [
-                _vm._v(
-                  "\n                        Jumlah\n                    "
-                ),
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "flex items-center space-x-5" }, [
-                _c("div", [
-                  _c("button", { staticClass: "w-16 h-12 btn btn-heart" }, [
-                    _c(
-                      "svg",
-                      {
-                        staticClass: "w-6 h-6 fill-white",
-                        attrs: {
-                          xmlns: "http://www.w3.org/2000/svg",
-                          viewBox: "0 0 20 20",
-                        },
-                      },
-                      [
-                        _c("path", {
-                          attrs: {
-                            "fill-rule": "evenodd",
-                            d: "M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z",
-                            "clip-rule": "evenodd",
-                          },
-                        }),
-                      ]
-                    ),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _vm._m(1),
-                _vm._v(" "),
-                _vm._m(2),
-              ]),
-            ]),
-          ]),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "flex mt-10 bg" }, [
-        _c("div", { staticClass: "mx-auto" }, [
-          _c("div", { staticClass: "text-lg font-medium text-success" }, [
-            _vm._v("Info Produk"),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "mt-8 border border-[#79B625]" }),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "text-[#7EB3A5] font-medium text-xl my-10" },
-            [_vm._v("Rincian")]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass:
-                "flex flex-col items-start justify-start space-y-8 font-light",
-            },
-            [
-              _c("div", [
-                _vm._v("Ukuran Layar: " + _vm._s(_vm.gift.attributes.screen)),
-              ]),
-              _vm._v(" "),
-              _c("div", [
-                _vm._v("Memori: " + _vm._s(_vm.gift.attributes.memory)),
-              ]),
-              _vm._v(" "),
-              _c("div", [
-                _vm._v(
-                  "\n                        Sistem Operasi: " +
-                    _vm._s(_vm.gift.attributes.operation_system) +
-                    "\n                    "
-                ),
-              ]),
-              _vm._v(" "),
-              _c("div", [
-                _vm._v(
-                  "\n                        CPU: " +
-                    _vm._s(_vm.gift.attributes.cpu) +
-                    "\n                    "
-                ),
-              ]),
-              _vm._v(" "),
-              _c("div", [
-                _vm._v(
-                  "\n                        Kamera: " +
-                    _vm._s(_vm.gift.attributes.camera) +
-                    "\n                    "
-                ),
-              ]),
-              _vm._v(" "),
-              _c("div", [
-                _vm._v(
-                  "\n                        SIM: " +
-                    _vm._s(_vm.gift.attributes.sim) +
-                    "\n                    "
-                ),
-              ]),
-              _vm._v(" "),
-              _c("div", [
-                _vm._v(
-                  "\n                        Baterai: " +
-                    _vm._s(_vm.gift.attributes.battery) +
-                    "\n                    "
-                ),
               ]),
             ]
           ),
         ]),
-      ]),
-    ]),
-    _vm._v(" "),
-    _c("div", [_c("Footer")], 1),
-  ])
+        _vm._v(" "),
+        _c("div", { staticClass: "flex mt-10 px-6 py-10 bg" }, [
+          _c("div", { staticClass: "mx-auto" }, [
+            _c("div", { staticClass: "text-lg font-medium text-success" }, [
+              _vm._v("Info Produk"),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "mt-8 border border-[#79B625]" }),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "text-[#7EB3A5] font-medium text-xl my-10" },
+              [_vm._v("Rincian")]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "flex flex-col items-start justify-start space-y-8 font-light",
+              },
+              [
+                _c("div", [
+                  _vm._v("Ukuran Layar: " + _vm._s(_vm.gift.attributes.screen)),
+                ]),
+                _vm._v(" "),
+                _c("div", [
+                  _vm._v("Memori: " + _vm._s(_vm.gift.attributes.memory)),
+                ]),
+                _vm._v(" "),
+                _c("div", [
+                  _vm._v(
+                    "\n                    Sistem Operasi: " +
+                      _vm._s(_vm.gift.attributes.operation_system) +
+                      "\n                "
+                  ),
+                ]),
+                _vm._v(" "),
+                _c("div", [
+                  _vm._v(
+                    "\n                    CPU: " +
+                      _vm._s(_vm.gift.attributes.cpu) +
+                      "\n                "
+                  ),
+                ]),
+                _vm._v(" "),
+                _c("div", [
+                  _vm._v(
+                    "\n                    Kamera: " +
+                      _vm._s(_vm.gift.attributes.camera) +
+                      "\n                "
+                  ),
+                ]),
+                _vm._v(" "),
+                _c("div", [
+                  _vm._v(
+                    "\n                    SIM: " +
+                      _vm._s(_vm.gift.attributes.sim) +
+                      "\n                "
+                  ),
+                ]),
+                _vm._v(" "),
+                _c("div", [
+                  _vm._v(
+                    "\n                    Baterai: " +
+                      _vm._s(_vm.gift.attributes.battery) +
+                      "\n                "
+                  ),
+                ]),
+              ]
+            ),
+          ]),
+        ]),
+      ])
+    : _vm._e()
 }
 var staticRenderFns = [
   function () {
@@ -4979,11 +5841,9 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("button", { staticClass: "w-40 h-12 btn btn-redeem" }, [
-        _c("span", { staticClass: "text-sm font-light text-white" }, [
-          _vm._v("Redeem"),
-        ]),
+    return _c("button", { staticClass: "w-40 h-12 btn btn-redeem" }, [
+      _c("span", { staticClass: "text-sm font-light text-white" }, [
+        _vm._v("Redeem"),
       ]),
     ])
   },
@@ -4994,7 +5854,7 @@ var staticRenderFns = [
     return _c("div", [
       _c("button", { staticClass: "w-40 h-12 btn btn-outline-add-chart" }, [
         _vm._v(
-          "\n                                Add to chart\n                            "
+          "\n                            Add to chart\n                        "
         ),
       ]),
     ])
@@ -5022,183 +5882,365 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "flex flex-col h-screen" }, [
-    _c("div", [_c("Navbar")], 1),
-    _vm._v(" "),
-    _c("div", { staticClass: "flex-grow mt-8" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "flex flex-row gap-20" }, [
-          _c("div", { staticClass: "basis-1/4" }, [
-            _c("div", { staticClass: "flex flex-col space-y-4" }, [
-              _c("div", { staticClass: "font-bold text-lg text-[#3C3C3F]" }, [
-                _vm._v("Filter"),
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "mb-10 border border-slate-200" }),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "w-full border-[1px] border-[#D8D8D8] border-solid rounded-sm py-6 px-5",
-                },
-                [
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "flex flex-col lg:flex-row gap-20 mb-10" }, [
+      _c(
+        "div",
+        { staticClass: "basis-full md:basis-1/4 lg:basis-2/4 xl:basis-1/4" },
+        [
+          _c("div", { staticClass: "flex flex-col space-y-5" }, [
+            _vm._m(0),
+            _vm._v(" "),
+            _c("div", { staticClass: "mb-10 border border-slate-200" }),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "w-full border-[1px] border-[#D8D8D8] border-solid rounded-sm py-6 px-5",
+              },
+              [
+                _c(
+                  "div",
+                  { staticClass: "flex items-center justify-start mb-8" },
+                  [
+                    _c(
+                      "div",
+                      { staticClass: "mr-auto text-[#888888] text-base" },
+                      [
+                        _vm._v(
+                          "\n                            Rating 4 ke atas\n                        "
+                        ),
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", [
+                      _c("div", { staticClass: "form-check-inline" }, [
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.checkedFilterRating,
+                              expression: "checkedFilterRating",
+                            },
+                          ],
+                          staticClass:
+                            "w-4 h-4 my-1 align-top transition duration-200 bg-white bg-center bg-no-repeat \n                                    bg-contain border border-gray-300 rounded-sm appearance-none cursor-pointer \n                                    form-check-input checked:bg-[#74B71B] checked:border-[#74B71B] focus:outline-none",
+                          attrs: { type: "checkbox", value: "1" },
+                          domProps: {
+                            checked: Array.isArray(_vm.checkedFilterRating)
+                              ? _vm._i(_vm.checkedFilterRating, "1") > -1
+                              : _vm.checkedFilterRating,
+                          },
+                          on: {
+                            change: function ($event) {
+                              var $$a = _vm.checkedFilterRating,
+                                $$el = $event.target,
+                                $$c = $$el.checked ? true : false
+                              if (Array.isArray($$a)) {
+                                var $$v = "1",
+                                  $$i = _vm._i($$a, $$v)
+                                if ($$el.checked) {
+                                  $$i < 0 &&
+                                    (_vm.checkedFilterRating = $$a.concat([
+                                      $$v,
+                                    ]))
+                                } else {
+                                  $$i > -1 &&
+                                    (_vm.checkedFilterRating = $$a
+                                      .slice(0, $$i)
+                                      .concat($$a.slice($$i + 1)))
+                                }
+                              } else {
+                                _vm.checkedFilterRating = $$c
+                              }
+                            },
+                          },
+                        }),
+                      ]),
+                    ]),
+                  ]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "flex items-center justify-start" }, [
                   _c(
                     "div",
-                    { staticClass: "flex items-center justify-start mb-8" },
+                    { staticClass: "mr-auto text-[#888888] text-base" },
                     [
-                      _c("div", { staticClass: "mr-auto text-[#888888]" }, [
-                        _vm._v(
-                          "\n                                    Rating 4 ke atas\n                                "
-                        ),
-                      ]),
-                      _vm._v(" "),
-                      _c("div", [
-                        _c("div", { staticClass: "form-check" }, [
-                          _c("input", {
-                            directives: [
-                              {
-                                name: "model",
-                                rawName: "v-model",
-                                value: _vm.checkedFilterRating,
-                                expression: "checkedFilterRating",
-                              },
-                            ],
-                            staticClass:
-                              "w-4 h-4 my-1 align-top transition duration-200 bg-white bg-center bg-no-repeat \n                                            bg-contain border border-gray-300 rounded-sm appearance-none cursor-pointer \n                                            form-check-input checked:bg-[#74B71B] checked:border-[#74B71B] focus:outline-none",
-                            attrs: {
-                              type: "checkbox",
-                              value: "1",
-                              id: "flexCheckDefault3",
-                            },
-                            domProps: {
-                              checked: Array.isArray(_vm.checkedFilterRating)
-                                ? _vm._i(_vm.checkedFilterRating, "1") > -1
-                                : _vm.checkedFilterRating,
-                            },
-                            on: {
-                              change: function ($event) {
-                                var $$a = _vm.checkedFilterRating,
-                                  $$el = $event.target,
-                                  $$c = $$el.checked ? true : false
-                                if (Array.isArray($$a)) {
-                                  var $$v = "1",
-                                    $$i = _vm._i($$a, $$v)
-                                  if ($$el.checked) {
-                                    $$i < 0 &&
-                                      (_vm.checkedFilterRating = $$a.concat([
-                                        $$v,
-                                      ]))
-                                  } else {
-                                    $$i > -1 &&
-                                      (_vm.checkedFilterRating = $$a
-                                        .slice(0, $$i)
-                                        .concat($$a.slice($$i + 1)))
-                                  }
-                                } else {
-                                  _vm.checkedFilterRating = $$c
-                                }
-                              },
-                            },
-                          }),
-                        ]),
-                      ]),
+                      _vm._v(
+                        "\n                            Stock Tersedia\n                        "
+                      ),
                     ]
                   ),
                   _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "flex items-center justify-start" },
-                    [
-                      _c("div", { staticClass: "mr-auto text-[#888888]" }, [
-                        _vm._v(
-                          "\n                                    Stock Tersedia\n                                "
-                        ),
-                      ]),
-                      _vm._v(" "),
-                      _c("div", [
-                        _c("div", { staticClass: "form-check" }, [
-                          _c("input", {
-                            directives: [
-                              {
-                                name: "model",
-                                rawName: "v-model",
-                                value: _vm.checkedFilterStock,
-                                expression: "checkedFilterStock",
-                              },
-                            ],
-                            staticClass:
-                              "w-4 h-4 my-1 align-top transition duration-200 bg-white bg-center bg-no-repeat \n                                            bg-contain border border-gray-300 rounded-sm appearance-none cursor-pointer \n                                            form-check-input checked:bg-[#74B71B] checked:border-[#74B71B] focus:outline-none",
-                            attrs: {
-                              type: "checkbox",
-                              value: "2",
-                              id: "flexCheckDefault3",
-                            },
-                            domProps: {
-                              checked: Array.isArray(_vm.checkedFilterStock)
-                                ? _vm._i(_vm.checkedFilterStock, "2") > -1
-                                : _vm.checkedFilterStock,
-                            },
-                            on: {
-                              change: function ($event) {
-                                var $$a = _vm.checkedFilterStock,
-                                  $$el = $event.target,
-                                  $$c = $$el.checked ? true : false
-                                if (Array.isArray($$a)) {
-                                  var $$v = "2",
-                                    $$i = _vm._i($$a, $$v)
-                                  if ($$el.checked) {
-                                    $$i < 0 &&
-                                      (_vm.checkedFilterStock = $$a.concat([
-                                        $$v,
-                                      ]))
-                                  } else {
-                                    $$i > -1 &&
-                                      (_vm.checkedFilterStock = $$a
-                                        .slice(0, $$i)
-                                        .concat($$a.slice($$i + 1)))
-                                  }
-                                } else {
-                                  _vm.checkedFilterStock = $$c
-                                }
-                              },
-                            },
-                          }),
-                        ]),
-                      ]),
-                    ]
-                  ),
-                ]
-              ),
-            ]),
+                  _c("div", [
+                    _c("div", { staticClass: "form-check-inline" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.checkedFilterStock,
+                            expression: "checkedFilterStock",
+                          },
+                        ],
+                        staticClass:
+                          "w-4 h-4 my-1 align-top transition duration-200 bg-white bg-center bg-no-repeat \n                                    bg-contain border border-gray-300 rounded-sm appearance-none cursor-pointer \n                                    form-check-input checked:bg-[#74B71B] checked:border-[#74B71B] focus:outline-none",
+                        attrs: { type: "checkbox", value: "2" },
+                        domProps: {
+                          checked: Array.isArray(_vm.checkedFilterStock)
+                            ? _vm._i(_vm.checkedFilterStock, "2") > -1
+                            : _vm.checkedFilterStock,
+                        },
+                        on: {
+                          change: function ($event) {
+                            var $$a = _vm.checkedFilterStock,
+                              $$el = $event.target,
+                              $$c = $$el.checked ? true : false
+                            if (Array.isArray($$a)) {
+                              var $$v = "2",
+                                $$i = _vm._i($$a, $$v)
+                              if ($$el.checked) {
+                                $$i < 0 &&
+                                  (_vm.checkedFilterStock = $$a.concat([$$v]))
+                              } else {
+                                $$i > -1 &&
+                                  (_vm.checkedFilterStock = $$a
+                                    .slice(0, $$i)
+                                    .concat($$a.slice($$i + 1)))
+                              }
+                            } else {
+                              _vm.checkedFilterStock = $$c
+                            }
+                          },
+                        },
+                      }),
+                    ]),
+                  ]),
+                ]),
+              ]
+            ),
           ]),
+        ]
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "md:basis-full" }, [
+        _c("div", { staticClass: "flex flex-col space-y-4" }, [
+          _vm._m(1),
           _vm._v(" "),
-          _c("div", { staticClass: "basis-full" }, [
-            _c("div", { staticClass: "flex flex-col space-y-4" }, [
-              _vm._m(0),
+          _c("div", { staticClass: "border border-slate-200" }),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass:
+                "grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3",
+            },
+            [
+              _vm.filteredPhone.length == 0
+                ? _c("div", { staticClass: "text-gray-500" }, [
+                    _vm._v("Data tidak ditemukan"),
+                  ])
+                : _vm._e(),
               _vm._v(" "),
-              _c("div", { staticClass: "border border-slate-200" }),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "grid grid-cols-1 gap-4 md:grid-cols-3" },
-                _vm._l(_vm.filteredPhone, function (gift, index) {
-                  return _c("ListProducts", {
-                    key: index,
-                    attrs: { gift: gift },
-                  })
-                }),
-                1
-              ),
-              _vm._v(" "),
-              _vm._m(1),
-            ]),
-          ]),
+              _vm._l(_vm.filteredPhone, function (gift, index) {
+                return _c("ListProducts", { key: index, attrs: { gift: gift } })
+              }),
+            ],
+            2
+          ),
         ]),
+        _vm._v(" "),
+        _vm.gifts.length
+          ? _c(
+              "div",
+              { staticClass: "flex items-center justify-center mt-10 mb-5" },
+              [
+                _vm.pagination_links.prev !== null
+                  ? _c(
+                      "div",
+                      {
+                        staticClass: "w-8 mr-1 flex justify-center",
+                        class: _vm.classCursorPrev,
+                        on: {
+                          click: function ($event) {
+                            return _vm.getResults(
+                              null,
+                              _vm.pagination_links.prev
+                            )
+                          },
+                        },
+                      },
+                      [
+                        _c(
+                          "svg",
+                          {
+                            staticClass: "feather feather-chevron-left w-4 h-4",
+                            attrs: {
+                              xmlns: "http://www.w3.org/2000/svg",
+                              width: "100%",
+                              height: "100%",
+                              fill: "none",
+                              viewBox: "0 0 24 24",
+                              stroke: "currentColor",
+                              "stroke-width": "2",
+                              "stroke-linecap": "round",
+                              "stroke-linejoin": "round",
+                            },
+                          },
+                          [
+                            _c("polyline", {
+                              attrs: { points: "15 18 9 12 15 6" },
+                            }),
+                          ]
+                        ),
+                      ]
+                    )
+                  : _c(
+                      "div",
+                      {
+                        staticClass: "w-8 mr-1 flex justify-center",
+                        class: _vm.classCursorPrev,
+                      },
+                      [
+                        _c(
+                          "svg",
+                          {
+                            staticClass: "feather feather-chevron-left w-4 h-4",
+                            attrs: {
+                              xmlns: "http://www.w3.org/2000/svg",
+                              width: "100%",
+                              height: "100%",
+                              fill: "none",
+                              viewBox: "0 0 24 24",
+                              stroke: "currentColor",
+                              "stroke-width": "2",
+                              "stroke-linecap": "round",
+                              "stroke-linejoin": "round",
+                            },
+                          },
+                          [
+                            _c("polyline", {
+                              attrs: { points: "15 18 9 12 15 6" },
+                            }),
+                          ]
+                        ),
+                      ]
+                    ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "flex items-center h-8 font-medium select-none",
+                  },
+                  _vm._l(_vm.paginations.last_page, function (n) {
+                    return _c(
+                      "div",
+                      {
+                        key: n,
+                        staticClass:
+                          "w-6 h-6 md:flex justify-center items-center \n                        cursor-pointer leading-5 transition \n                        duration-150 ease-in text-sm",
+                        class: {
+                          paginationActive: n == _vm.paginations.current_page,
+                        },
+                        on: {
+                          click: function ($event) {
+                            return _vm.getResults(n, null)
+                          },
+                        },
+                      },
+                      [
+                        _vm._v(
+                          "\n                        " +
+                            _vm._s(n) +
+                            "    \n                    "
+                        ),
+                      ]
+                    )
+                  }),
+                  0
+                ),
+                _vm._v(" "),
+                _vm.pagination_links.next !== null
+                  ? _c(
+                      "div",
+                      {
+                        staticClass: "w-8 ml-1 flex justify-center",
+                        on: {
+                          click: function ($event) {
+                            return _vm.getResults(
+                              null,
+                              _vm.pagination_links.next
+                            )
+                          },
+                        },
+                      },
+                      [
+                        _c(
+                          "svg",
+                          {
+                            staticClass:
+                              "feather feather-chevron-right w-4 h-4",
+                            class: _vm.classCursorNext,
+                            attrs: {
+                              xmlns: "http://www.w3.org/2000/svg",
+                              width: "100%",
+                              height: "100%",
+                              fill: "none",
+                              viewBox: "0 0 24 24",
+                              stroke: "currentColor",
+                              "stroke-width": "2",
+                              "stroke-linecap": "round",
+                              "stroke-linejoin": "round",
+                            },
+                          },
+                          [
+                            _c("polyline", {
+                              attrs: { points: "9 18 15 12 9 6" },
+                            }),
+                          ]
+                        ),
+                      ]
+                    )
+                  : _c(
+                      "div",
+                      {
+                        staticClass: "w-8 ml-1 flex justify-center",
+                        class: _vm.classCursorNext,
+                      },
+                      [
+                        _c(
+                          "svg",
+                          {
+                            staticClass:
+                              "feather feather-chevron-right w-4 h-4",
+                            attrs: {
+                              xmlns: "http://www.w3.org/2000/svg",
+                              width: "100%",
+                              height: "100%",
+                              fill: "none",
+                              viewBox: "0 0 24 24",
+                              stroke: "currentColor",
+                              "stroke-width": "2",
+                              "stroke-linecap": "round",
+                              "stroke-linejoin": "round",
+                            },
+                          },
+                          [
+                            _c("polyline", {
+                              attrs: { points: "9 18 15 12 9 6" },
+                            }),
+                          ]
+                        ),
+                      ]
+                    ),
+              ]
+            )
+          : _vm._e(),
       ]),
     ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "mt-8" }, [_c("Footer")], 1),
   ])
 }
 var staticRenderFns = [
@@ -5206,23 +6248,9 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "flex items-center" }, [
-      _c("div", { staticClass: "mr-auto font-bold text-lg text-[#3C3C3F]" }, [
-        _vm._v(
-          "\n                                Product List\n                            "
-        ),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "mr-4 text-[#888888] text-sm" }, [
-        _vm._v("Urutkan"),
-      ]),
-      _vm._v(" "),
-      _c("div", [
-        _c("button", { staticClass: "btn btn-outline" }, [
-          _c("span", { staticClass: "text-sm font-light text-gray-400" }, [
-            _vm._v("Terbaru"),
-          ]),
-        ]),
+    return _c("div", { staticClass: "flex justify-startitems-center" }, [
+      _c("div", { staticClass: "font-bold text-lg text-[#3C3C3F]" }, [
+        _vm._v("Filter"),
       ]),
     ])
   },
@@ -5230,9 +6258,17 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "flex" }, [
-      _c("div", { staticClass: "ml-auto" }),
-    ])
+    return _c(
+      "div",
+      { staticClass: "flex flex-wrap justify-start items-center" },
+      [
+        _c("div", { staticClass: "mr-auto font-bold text-lg text-[#3C3C3F]" }, [
+          _vm._v(
+            "\n                        Product List\n                    "
+          ),
+        ]),
+      ]
+    )
   },
 ]
 render._withStripped = true
@@ -5368,15 +6404,16 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "mb-10 card" }, [
+  return _c("div", { staticClass: "card group overflow-hidden" }, [
     _c(
       "div",
       {
-        staticClass: "absolute top-[-6px] right-[-7px] ",
+        staticClass: "absolute top-0 right-0 ",
         class: _vm.gift.attributes.flag == 4 ? "hidden" : "block",
       },
       [
         _c("img", {
+          staticClass: "w-full h-auto",
           attrs: {
             src: _vm.giftFormatImage(_vm.gift.attributes.flag),
             alt: "Badge Hot Item",
@@ -5385,96 +6422,134 @@ var render = function () {
       ]
     ),
     _vm._v(" "),
+    _c("div", {
+      directives: [
+        {
+          name: "show",
+          rawName: "v-show",
+          value: _vm.gift.attributes.stock == 0,
+          expression: "gift.attributes.stock == 0",
+        },
+      ],
+      staticClass: "absolute top-0 bottom-0 right-0 left-0 bg-[#E1E8EE]/60",
+    }),
+    _vm._v(" "),
     _c(
       "div",
-      { staticClass: "flex flex-col justify-start flex-grow space-y-2" },
+      {
+        directives: [
+          {
+            name: "show",
+            rawName: "v-show",
+            value: _vm.gift.attributes.stock > 0,
+            expression: "gift.attributes.stock > 0",
+          },
+        ],
+        staticClass:
+          "absolute top-0 bottom-0 right-0 left-0 opacity-0 \r\n\t\t\tgroup-hover:opacity-100 group-hover:bg-[#74B71B]/90 transition-all duration-200 ease-in",
+      },
       [
         _c(
           "div",
           {
-            staticClass: "text-sm font-semibold",
-            class: _vm.stockFormatClass(_vm.gift.attributes.stock),
-          },
-          [
-            _vm._v(
-              _vm._s(_vm._f("stockFormatLabel")(_vm.gift.attributes.stock))
-            ),
-          ]
-        ),
-        _vm._v(" "),
-        _vm._m(0),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
             staticClass:
-              "text-[#3C3C3F] text-lg font-medium text-left cursor-pointer",
+              "flex flex-col justify-center items-center min-h-full text-white space-y-6",
           },
           [
-            _c("router-link", { attrs: { to: "gift/" + _vm.gift.id } }, [
-              _vm._v(_vm._s(_vm.gift.attributes.series)),
-            ]),
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "flex items-end justify-between flex-grow gap-3" },
-          [
-            _c("div", [
-              _c("div", { staticClass: "flex gap-2" }, [
-                _c("img", {
-                  attrs: { src: "/images/badge-points.svg", alt: "" },
-                }),
-                _vm._v(" "),
-                _c("p", { staticClass: "text-sm text-success" }, [
-                  _vm._v(_vm._s(_vm.gift.attributes.points) + " points"),
-                ]),
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "flex items-center gap-2 mt-1" }, [
-                _vm._m(1),
-                _vm._v(" "),
-                _c(
-                  "span",
-                  { staticClass: "text-[#838EAB] text-sm font-light" },
-                  [
-                    _vm._v(
-                      _vm._s(_vm.gift.attributes.total_reviews) + " reviews"
-                    ),
-                  ]
-                ),
-              ]),
+            _c("div", { staticClass: "text-2xl text-center" }, [
+              _vm._v(
+                "\r\n\t\t\t\t\t" +
+                  _vm._s(_vm.gift.attributes.series) +
+                  "\r\n\t\t\t\t"
+              ),
             ]),
             _vm._v(" "),
-            _c("div", [
-              _c("button", { staticClass: "btn btn-heart" }, [
-                _c(
-                  "svg",
-                  {
-                    staticClass: "w-5 h-5 fill-white",
-                    attrs: {
-                      xmlns: "http://www.w3.org/2000/svg",
-                      viewBox: "0 0 20 20",
-                    },
-                  },
-                  [
-                    _c("path", {
-                      attrs: {
-                        "fill-rule": "evenodd",
-                        d: "M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z",
-                        "clip-rule": "evenodd",
-                      },
-                    }),
-                  ]
-                ),
-              ]),
-            ]),
+            _c(
+              "button",
+              { staticClass: "btn btn-outline w-60 text-sm" },
+              [
+                _c("router-link", { attrs: { to: "gift/" + _vm.gift.id } }, [
+                  _vm._v(" View Detail "),
+                ]),
+              ],
+              1
+            ),
           ]
         ),
       ]
     ),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass: "text-sm font-semibold",
+        class: _vm.stockFormatClass(_vm.gift.attributes.stock),
+      },
+      [_vm._v(_vm._s(_vm._f("stockFormatLabel")(_vm.gift.attributes.stock)))]
+    ),
+    _vm._v(" "),
+    _vm._m(0),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass:
+          "text-[#3C3C3F] min-h-[50px] flex-grow text-lg font-medium text-left cursor-pointer",
+      },
+      [
+        _c("router-link", { attrs: { to: "gift/" + _vm.gift.id } }, [
+          _vm._v(_vm._s(_vm.gift.attributes.series)),
+        ]),
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c("div", { staticClass: "flex items-center justify-between gap-3 mt-3" }, [
+      _c("div", [
+        _c("div", { staticClass: "flex gap-2" }, [
+          _c("img", { attrs: { src: "/images/badge-points.svg", alt: "" } }),
+          _vm._v(" "),
+          _c("p", { staticClass: "text-sm text-success" }, [
+            _vm._v(_vm._s(_vm.gift.attributes.points) + " points"),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "flex flex-wrap items-center gap-2 mt-1" }, [
+          _vm._m(1),
+          _vm._v(" "),
+          _c("span", { staticClass: "text-[#838EAB] text-sm font-light" }, [
+            _vm._v(_vm._s(_vm.gift.attributes.total_reviews) + " reviews"),
+          ]),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "group" }, [
+        _c("button", { staticClass: "btn btn-outline group-hover:btn-heart" }, [
+          _c(
+            "svg",
+            {
+              staticClass:
+                "w-6 h-6 stroke-gray-200 group-hover:fill-white group-hover:stroke-white",
+              attrs: {
+                xmlns: "http://www.w3.org/2000/svg",
+                fill: "none",
+                viewBox: "0 0 24 24",
+              },
+            },
+            [
+              _c("path", {
+                attrs: {
+                  "stroke-linecap": "round",
+                  "stroke-linejoin": "round",
+                  "stroke-width": "2",
+                  d: "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z",
+                },
+              }),
+            ]
+          ),
+        ]),
+      ]),
+    ]),
   ])
 }
 var staticRenderFns = [

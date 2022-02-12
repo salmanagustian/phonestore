@@ -544,21 +544,29 @@ Ensure the default browser behavior of the `hidden` attribute.
 .right-\[-7px\]{
   right: -7px;
 }
-.my-8{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.top-0{
+  top: 0px;
 }
-.my-4{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.right-0{
+  right: 0px;
+}
+.bottom-0{
+  bottom: 0px;
+}
+.left-0{
+  left: 0px;
+}
+.my-10{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
 }
-.my-10{
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .my-1{
   margin-top: 0.25rem;
@@ -585,14 +593,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mr-4{
   margin-right: 1rem;
 }
-.ml-auto{
-  margin-left: auto;
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+.mr-1{
+  margin-right: 0.25rem;
+}
+.ml-1{
+  margin-left: 0.25rem;
 }
 .mb-auto{
   margin-bottom: auto;
 }
+.mt-3{
+  margin-top: 0.75rem;
+}
 .mt-1{
   margin-top: 0.25rem;
+}
+.ml-auto{
+  margin-left: auto;
 }
 .block{
   display: block;
@@ -606,12 +626,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hidden{
   display: none;
 }
-.h-screen{
-  height: 100vh;
-}
-.h-\[500px\]{
-  height: 500px;
-}
 .h-4{
   height: 1rem;
 }
@@ -621,17 +635,29 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-6{
   height: 1.5rem;
 }
-.h-5{
-  height: 1.25rem;
+.h-8{
+  height: 2rem;
 }
 .h-\[90px\]{
   height: 90px;
 }
+.h-screen{
+  height: 100vh;
+}
+.h-5{
+  height: 1.25rem;
+}
+.h-auto{
+  height: auto;
+}
+.min-h-full{
+  min-height: 100%;
+}
+.min-h-\[50px\]{
+  min-height: 50px;
+}
 .w-full{
   width: 100%;
-}
-.w-\[35\%\]{
-  width: 35%;
 }
 .w-4{
   width: 1rem;
@@ -645,20 +671,29 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-40{
   width: 10rem;
 }
+.w-8{
+  width: 2rem;
+}
 .w-5{
   width: 1.25rem;
 }
+.w-60{
+  width: 15rem;
+}
+.flex-shrink-0{
+  flex-shrink: 0;
+}
 .flex-grow{
   flex-grow: 1;
-}
-.basis-1\/4{
-  flex-basis: 25%;
 }
 .basis-full{
   flex-basis: 100%;
 }
 .cursor-pointer{
   cursor: pointer;
+}
+.cursor-not-allowed{
+  cursor: not-allowed;
 }
 .select-none{
   -webkit-user-select: none;
@@ -680,11 +715,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .flex-col{
   flex-direction: column;
 }
+.flex-wrap{
+  flex-wrap: wrap;
+}
 .items-start{
   align-items: flex-start;
-}
-.items-end{
-  align-items: flex-end;
 }
 .items-center{
   align-items: center;
@@ -692,11 +727,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .justify-start{
   justify-content: flex-start;
 }
+.justify-center{
+  justify-content: center;
+}
 .justify-between{
   justify-content: space-between;
-}
-.gap-16{
-  gap: 4rem;
 }
 .gap-3{
   gap: 0.75rem;
@@ -726,23 +761,34 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
-.space-x-5 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.25rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+.space-y-2 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+.space-y-5 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 .space-y-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
-.space-y-2 > :not([hidden]) ~ :not([hidden]){
+.space-y-6 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
-  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+.overflow-hidden{
+  overflow: hidden;
 }
 .rounded-sm{
   border-radius: 0.125rem;
+}
+.rounded-full{
+  border-radius: 9999px;
 }
 .border{
   border-width: 1px;
@@ -777,6 +823,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(60 60 63 / var(--tw-bg-opacity));
 }
+.bg-\[\#E1E8EE\]\/60{
+  background-color: rgb(225 232 238 / 0.6);
+}
 .bg-contain{
   background-size: contain;
 }
@@ -789,16 +838,20 @@ Ensure the default browser behavior of the `hidden` attribute.
 .fill-white{
   fill: #fff;
 }
-.stroke-slate-500{
-  stroke: #64748b;
+.stroke-gray-200{
+  stroke: #e5e7eb;
 }
 .object-contain{
   -o-object-fit: contain;
      object-fit: contain;
 }
-.px-32{
-  padding-left: 8rem;
-  padding-right: 8rem;
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 .py-6{
   padding-top: 1.5rem;
@@ -808,9 +861,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
 .py-7{
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
+}
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 .px-52{
   padding-left: 13rem;
@@ -823,8 +884,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-left{
   text-align: left;
 }
+.text-center{
+  text-align: center;
+}
 .align-top{
   vertical-align: top;
+}
+.align-middle{
+  vertical-align: middle;
 }
 .text-2xl{
   font-size: 1.5rem;
@@ -842,6 +909,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
 .font-bold{
   font-weight: 700;
 }
@@ -853,6 +928,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .font-medium{
   font-weight: 500;
+}
+.leading-5{
+  line-height: 1.25rem;
 }
 .text-\[\#262626\]{
   --tw-text-opacity: 1;
@@ -886,9 +964,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
+.text-gray-500{
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+.text-gray-700{
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
 .antialiased{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.opacity-0{
+  opacity: 0;
 }
 .filter{
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -900,32 +989,173 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 .duration-200{
   transition-duration: 200ms;
+}
+.duration-150{
+  transition-duration: 150ms;
+}
+.ease-in{
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 .text-success {
         color : #79B625;
         opacity: 0.8;
     }
-
+.form-check {
+        position: relative;
+        display: block;
+        padding-left: 1.25rem;
+    }
+.form-check-input {
+        position: absolute;
+        margin-top: 0.3rem;
+        margin-left: -1.25rem;
+    }
+.form-check-inline {
+        display: inline-flex;
+        align-items: center;
+        padding-left: 0;
+        margin-right: 0.75rem;
+    }
+.form-check-inline .form-check-input {
+        position: static;
+        margin-top: 0;
+        margin-right: 0.3125rem;
+        margin-left: 0;
+    }
+[type='checkbox']:checked {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z'/%3e%3c/svg%3e");
+    }
+.paginationActive{
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(116 183 27 / var(--tw-bg-opacity));
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
 .checked\:border-\[\#74B71B\]:checked{
   --tw-border-opacity: 1;
   border-color: rgb(116 183 27 / var(--tw-border-opacity));
 }
-
 .checked\:bg-\[\#74B71B\]:checked{
   --tw-bg-opacity: 1;
   background-color: rgb(116 183 27 / var(--tw-bg-opacity));
 }
-
 .focus\:outline-none:focus{
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
-
+.group:hover .group-hover\:btn-heart{
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 39 119 / var(--tw-bg-opacity));
+}
+.group:hover .group-hover\:bg-\[\#74B71B\]\/90{
+  background-color: rgb(116 183 27 / 0.9);
+}
+.group:hover .group-hover\:fill-white{
+  fill: #fff;
+}
+.group:hover .group-hover\:stroke-white{
+  stroke: #fff;
+}
+.group:hover .group-hover\:opacity-100{
+  opacity: 1;
+}
 @media (min-width: 768px){
+
+  .md\:flex{
+    display: flex;
+  }
+
+  .md\:basis-1\/4{
+    flex-basis: 25%;
+  }
+
+  .md\:basis-full{
+    flex-basis: 100%;
+  }
+
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 
   .md\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
+  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .md\:space-x-2 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+}
+@media (min-width: 1024px){
+
+  .lg\:mb-0{
+    margin-bottom: 0px;
+  }
+
+  .lg\:flex-grow{
+    flex-grow: 1;
+  }
+
+  .lg\:basis-3\/4{
+    flex-basis: 75%;
+  }
+
+  .lg\:basis-7\/12{
+    flex-basis: 58.333333%;
+  }
+
+  .lg\:basis-2\/4{
+    flex-basis: 50%;
+  }
+
+  .lg\:flex-row{
+    flex-direction: row;
+  }
+
+  .lg\:justify-start{
+    justify-content: flex-start;
+  }
+
+  .lg\:gap-8{
+    gap: 2rem;
+  }
+}
+@media (min-width: 1280px){
+
+  .xl\:basis-2\/5{
+    flex-basis: 40%;
+  }
+
+  .xl\:basis-1\/4{
+    flex-basis: 25%;
+  }
+
+  .xl\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .xl\:px-52{
+    padding-left: 13rem;
+    padding-right: 13rem;
   }
 }
